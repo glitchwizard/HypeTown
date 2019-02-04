@@ -1,3 +1,19 @@
 <p>
   home works!
 </p>
+
+<input #location>
+<button (click)="getLocationById(location.value)"></button>
+
+<input type="date" #min> to <input type="date" #max>
+<button  (click)="findByDate(location.value, min.value, max.value)"></button>
+
+
+<div *ngIf="locations">
+  <app-locations-list [childLocations]="locations"> </app-locations-list>
+
+</div>
+
+<!-- <select id="locationSelection" name="">
+  <option>Choose a more specific location</option>
+</select> -->
