@@ -13,6 +13,6 @@ export class SongkickService {
   }
 
   filterByDate(id, min, max){
-    return this.http.get(`https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=${songkickKey}&$min_date=${min}&$max_date=${max}&per_page=10`)
+    return this.http.get(`https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=${songkickKey}&$min_date=${min}&$max_date=${max}`)
   }
 }
