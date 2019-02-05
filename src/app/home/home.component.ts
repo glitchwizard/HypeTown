@@ -14,34 +14,41 @@ import { Observable } from 'rxjs/Observable';
 })
 
 export class HomeComponent {
+  artistList: any[];
 
 
   constructor(private  songkickService: SongkickService, public spotifyAPI: SpotifyService) {}
 
-locations: Location[] = null;
-
-artists: Observable<any>;
-artistIDs: string[];
+  locations: Location[] = null;
+  artists: Observable<any>;
 
   executeOnShows(shows) {
+    const artistList = [];
+    console.log(this.artistList)
     console.log("got into executeOnShows");
-    shows.forEach(function(show) {
+    shows.forEach((show)=> {
       console.log("show date: " + show.start.date);
-      show.performance.forEach(function(performance) {
-        console.log(" - " + performance.displayName)
-      })
+      show.performance.forEach((performance)=> {
+        console.log("artist name: " + performance.displayName)
+        artistList.push(performance.displayName);
+      });
     })
+    this.artistList = artistList;
+    console.log(this.artistList);
   }
 
-createPerformanceArray(location: string, min: string, max: string) {
-  this.songkickService.findByDate(location, min, max, this.executeOnShows)
-}
 
+  createPerformanceArray(location: string, min: string, max: string) {
+    this.songkickService.findByDate(location, min, max, this)
+  }
 
   getArtistsFromSpotify() {
     return this.spotifyAPI.getToken().map(res => {
-        return this.spotifyAPI.searchArtistID("lil", res.access_token)
-      });
+      for (let artist of this.artistList) {
+        return this.spotifyAPI.searchArtistID(artist, res.access_token)
+      }
+      // return this.spotifyAPI.searchArtistID("lil", res.access_token)
+    });
   }
 
   getIdsFromArtists(){
