@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SongkickService } from '../services/songkick.service';
 import { Event } from '../models/event-model';
-import { SpotifyService } from '../spotify.service'
+import { SpotifyService } from '../services/spotify.service'
 
 
 
@@ -13,9 +13,9 @@ import { SpotifyService } from '../spotify.service'
 })
 
 export class HomeComponent {
-locations: any[]=null;
-eventDetails: any[]=null;
-eventsList: Event[]=[];
+locations: Location[] = null;
+eventDetails: any[] = null;
+eventsList: Event[] = [];
 
 
 albums: any[];
