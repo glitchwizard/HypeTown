@@ -10,9 +10,9 @@ import { Event } from '../models/event-model';
 })
 
 export class HomeComponent {
-locations: any[]=null;
-eventDetails: any[]=null;
-eventsAndBands: Event[]=[];
+locations: any;
+// eventDetails: any[]=null;
+eventsAndBands: any[]=[];
 
 
   constructor(private  SongkickService: SongkickService) {}
@@ -30,23 +30,41 @@ eventsAndBands: Event[]=[];
   //     });
   //   }
 
-    findByDate(location: string, min: number, max: number) {
-      this.SongkickService.getLocationId(location).subscribe(response=>{
-        this.locations = response.json();
-        const id = this.locations.resultsPage.results.location[0].metroArea.id
-        this.SongkickService.filterByDate(id, min, max).subscribe(response=> {
-        this.eventDetails = response.json()
+  executeOnPerformance(shows) {
+    console.log("got into executeOnPerformance");
+    shows.forEach(function(show) {
+      console.log("show date: " + show.start.date);
+        show.performance.forEach(function(performance) {
+          console.log(" - " + performance.displayName)
+        })
+    })
+  }
 
-        const events = this.eventDetails.resultsPage.results.event
-        events.forEach(event => {
-          const eventName = event.displayName;
-          const newEvent = new Event(eventName)
-          this.eventsAndBands.push(newEvent);
-        })
-        console.log("eventList" + this.eventsAndBands);
-        })
-      });
-    }
+  findByDate(location: string, min: string, max: string) {
+    this.SongkickService.getLocationId(location).subscribe(response=>{
+      this.performancesByLocation(response,min,max)
+    });
+  }
+
+  performancesByLocation(response: any, min: string, max: string) {
+    this.locations = response.json();
+    const id = this.locations.resultsPage.results.location[0].metroArea.id
+    this.SongkickService.filterByDate(id, min, max).subscribe(response=> {
+      this.reFilter(response.json(), min, max);
+    })
+  }
+
+  reFilter(response: any, min: string, max: string){
+    response.resultsPage.results.event.forEach((show)=> {
+      if((min<=(show.start.date))&&((show.start.date)<=max)) {
+        this.eventsAndBands.push(show);
+      }
+    });
+    this.executeOnPerformance(this.eventsAndBands)
+  }
+
+
+
 
 }
 
