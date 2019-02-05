@@ -1,3 +1,18 @@
 <p>
   home works!
 </p>
+
+<input #location>
+<input type="date" #min> to <input type="date" #max>
+<button  (click)="findByDate(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
+<button  (click)="getAccessToken()" class="btn btn-warning">Test Spotify Call</button>
+
+
+<div *ngIf="locations">
+  <app-locations-list [childLocations]="locations"> </app-locations-list>
+
+</div>
+
+<!-- <select id="locationSelection" name="">
+  <option>Choose a more specific location</option>
+</select> -->
