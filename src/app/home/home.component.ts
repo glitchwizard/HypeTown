@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SongkickService } from '../services/songkick.service';
-import { Location } from '../models/location-model';
+import { Event } from '../models/event-model';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +9,10 @@ import { Location } from '../models/location-model';
   providers:[ SongkickService ]
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 locations: any[]=null;
 eventDetails: any[]=null;
+eventsAndBands: Event[]=[];
 
 
   constructor(private  SongkickService: SongkickService) {}
@@ -30,24 +31,22 @@ eventDetails: any[]=null;
   //   }
 
     findByDate(location: string, min: number, max: number) {
-      console.log(location)
-      console.log(min)
-      console.log(max)
-        this.SongkickService.getLocationId(location).subscribe(response=>{
-          this.locations = response.json();
-          const id = this.locations.resultsPage.results.location[0].metroArea.id
-          console.log(id)
-          this.SongkickService.filterByDate(id, min, max).subscribe(response=> {
-          this.eventDetails = response.json()
-          console.log(this.eventDetails)
-          })
-        // const userLocation = new Location(city, id)
-        // console.log(userLocation)
-        });
-      }
+      this.SongkickService.getLocationId(location).subscribe(response=>{
+        this.locations = response.json();
+        const id = this.locations.resultsPage.results.location[0].metroArea.id
+        this.SongkickService.filterByDate(id, min, max).subscribe(response=> {
+        this.eventDetails = response.json()
 
-  ngOnInit() {
-  }
+        const events = this.eventDetails.resultsPage.results.event
+        events.forEach(event => {
+          const eventName = event.displayName;
+          const newEvent = new Event(eventName)
+          this.eventsAndBands.push(newEvent);
+        })
+        console.log("eventList" + this.eventsAndBands);
+        })
+      });
+    }
 
 }
 
