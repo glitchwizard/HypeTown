@@ -17,19 +17,6 @@ eventsAndBands: Event[]=[];
 
   constructor(private  SongkickService: SongkickService) {}
 
-  // getLocationById(location: string) {
-  //     this.SongkickService.getLocationId(location).subscribe(response=>{
-  //     this.locations = response.json();
-  //     console.log("Locations below:")
-  //     const city = this.locations.resultsPage.results.location[0].metroArea.displayName;
-  //     const id = this.locations.resultsPage.results.location[0].metroArea.id
-  //     console.log(city)
-  //     console.log(id);
-  //     const userLocation = new Location(city, id)
-  //     console.log(userLocation)
-  //     });
-  //   }
-
     findByDate(location: string, min: number, max: number) {
       this.SongkickService.getLocationId(location).subscribe(response=>{
         this.locations = response.json();
@@ -49,10 +36,3 @@ eventsAndBands: Event[]=[];
     }
 
 }
-
-// createMasterLocations(locations: any) {
-//   locations.resultsPage.results.location.forEach(location => {
-//     const city = location.city.displayName
-//     const newLocation = new Location(city)
-//   })
-// }
