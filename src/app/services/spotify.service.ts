@@ -21,8 +21,8 @@ export class SpotifyService {
       .map(res => res.json());
   }
 
-  searchAlbums(str: string, token: string) {
-      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + str + '&type=album';
+  searchArtistID(str: string, token: string) {
+      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + str + '&type=artist';
       let headers = new Headers();
       headers.append('Authorization', 'Bearer ' + token);
       return this._http.get(this.searchUrl, { headers: headers })
