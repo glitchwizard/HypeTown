@@ -6,7 +6,6 @@ import { Artist } from '../models/artist-model';
 import { Observable } from 'rxjs/Observable';
 
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,17 +14,29 @@ import { Observable } from 'rxjs/Observable';
 })
 
 export class HomeComponent {
+
+
+  constructor(private  songkickService: SongkickService, public spotifyAPI: SpotifyService) {}
+
 locations: Location[] = null;
-eventDetails: any[] = null;
-eventsList: Event[] = [];
+
 artists: Observable<any>;
 artistIDs: string[];
 
+  executeOnShows(shows) {
+    console.log("got into executeOnShows");
+    shows.forEach(function(show) {
+      console.log("show date: " + show.start.date);
+      show.performance.forEach(function(performance) {
+        console.log(" - " + performance.displayName)
+      })
+    })
+  }
 
-  constructor(
-    private  SongkickService: SongkickService,
-    public spotifyAPI: SpotifyService
-  ) {}
+createPerformanceArray(location: string, min: string, max: string) {
+  this.songkickService.findByDate(location, min, max, this.executeOnShows)
+}
+
 
   getArtistsFromSpotify() {
     return this.spotifyAPI.getToken().map(res => {
@@ -41,21 +52,4 @@ artistIDs: string[];
     })
   }
 
-  findByDate(location: string, min: number, max: number) {
-    this.SongkickService.getLocationId(location).subscribe(response=>{
-      this.locations = response.json();
-      const id = this.locations.resultsPage.results.location[0].metroArea.id
-      this.SongkickService.filterByDate(id, min, max).subscribe(response=> {
-        this.eventDetails = response.json()
-        const events = this.eventDetails.resultsPage.results.event
-        events.forEach(event => {
-          const eventName = event.displayName;
-          const bandName = event.performance[0].artist.displayName
-          const newEvent = new Event(eventName, bandName)
-          this.eventsList.push(newEvent);
-        })
-        console.log(this.eventsList)
-      })
-    });
-  }
 }
