@@ -6,12 +6,9 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class SpotifyService {
   private searchUrl: string;
-  // private redirect_uri: string;
   private client_id = "17f3424549074c6296193fec7052a7ad";
   private client_secret = "db0991f0335b44d687da536f5f9d20b1";
-  // private access_token: string;
   private encoded = btoa(this.client_id + ':' + this.client_secret);
-  // private base64 = 'MTdmMzQyNDU0OTA3NGM2Mjk2MTkzZmVjNzA1MmE3YWQ6ZGIwOTkxZjAzMzViNDRkNjg3ZGE1MzZmNWY5ZDIwYjE=';
 
   constructor(private _http: Http) { }
 
@@ -24,8 +21,8 @@ export class SpotifyService {
       .map(res => res.json());
   }
 
-  searchAlbums(str: string, token: string) {
-      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + str + '&type=album';
+  searchArtistID(str: string, token: string) {
+      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + str + '&type=artist';
       let headers = new Headers();
       headers.append('Authorization', 'Bearer ' + token);
       return this._http.get(this.searchUrl, { headers: headers })

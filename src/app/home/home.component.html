@@ -4,15 +4,24 @@
 
 <input #location>
 <input type="date" #min> to <input type="date" #max>
-<button  (click)="createPerformanceArray(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
-<button  (click)="getAccessToken()" class="btn btn-warning">Test Spotify Call</button>
 
+<button  (click)="createPerformanceArray(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
+<button  (click)="getArtistsFromSpotify()" class="btn btn-warning">Test Spotify Call</button>
+
+
+
+<ul>
+{{(artists|async)?.artists.items.length}}
+  <li *ngFor="let artist of (artists|async)?.artists.items">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
+</ul>
+
+<button  (click)="getIdsFromArtists()" class="btn btn-warning">Test Artist ID Call</button>
+
+<ul>
+  <li *ngFor="let id of artistIDs">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
+</ul>
 
 <div *ngIf="locations">
   <app-locations-list [childLocations]="locations"> </app-locations-list>
 
 </div>
-
-<!-- <select id="locationSelection" name="">
-  <option>Choose a more specific location</option>
-</select> -->
