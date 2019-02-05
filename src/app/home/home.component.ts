@@ -10,25 +10,12 @@ import { Event } from '../models/event-model';
 })
 
 export class HomeComponent {
-locations: any;
-// eventDetails: any[]=null;
 eventsAndBands: any[]=[];
 
 
   constructor(private  SongkickService: SongkickService) {}
 
-  // getLocationById(location: string) {
-  //     this.SongkickService.getLocationId(location).subscribe(response=>{
-  //     this.locations = response.json();
-  //     console.log("Locations below:")
-  //     const city = this.locations.resultsPage.results.location[0].metroArea.displayName;
-  //     const id = this.locations.resultsPage.results.location[0].metroArea.id
-  //     console.log(city)
-  //     console.log(id);
-  //     const userLocation = new Location(city, id)
-  //     console.log(userLocation)
-  //     });
-  //   }
+
 
   executeOnPerformance(shows) {
     console.log("got into executeOnPerformance");
@@ -47,8 +34,7 @@ eventsAndBands: any[]=[];
   }
 
   performancesByLocation(response: any, min: string, max: string) {
-    this.locations = response.json();
-    const id = this.locations.resultsPage.results.location[0].metroArea.id
+    const id = response.json().resultsPage.results.location[0].metroArea.id
     this.SongkickService.filterByDate(id, min, max).subscribe(response=> {
       this.reFilter(response.json(), min, max);
     })
@@ -67,10 +53,3 @@ eventsAndBands: any[]=[];
 
 
 }
-
-// createMasterLocations(locations: any) {
-//   locations.resultsPage.results.location.forEach(location => {
-//     const city = location.city.displayName
-//     const newLocation = new Location(city)
-//   })
-// }

@@ -17,6 +17,7 @@ import { LocationsListComponent } from './locations-list/locations-list.componen
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     HttpModule,
   ],
   providers: [],
