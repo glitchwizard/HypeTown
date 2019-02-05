@@ -45,5 +45,3 @@ eventsAndBands: any[]=[];
     executeOnShows(this.eventsAndBands)
   }
 }
-
-// curl -H "Authorization: Basic MTdmMzQyNDU0OTA3NGM2Mjk2MTkzZmVjNzA1MmE3YWQ6ZGIwOTkxZjAzMzViNDRkNjg3ZGE1MzZmNWY5ZDIwYjE=" -d grant_type=AQBResx2bIA9ALY5lG5icOHxk7_B4U3lhF0m-lgff7tUYGUEjrHzdVevoMrf4Y7GI8UDHk29TIegmUjzOBsbUunegGIHD4aCcHTYr9Si1oha71ToRw4y5jl_OKtLyigKJdfCs-9XjMAS9LF_xeUoQVat9DvcWWvilNAkwY1pn6eqAJU3M-uGedLps3iDRBawAWaZurZUG1YSBC6KVjCWVX7u9dAUrKURY5KcWFI-d code=MQCbtKe...44KN -d redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback https://accounts.spotify.com/api/token
