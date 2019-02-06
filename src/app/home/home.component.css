@@ -5,25 +5,45 @@
   right: 0px;
   bottom: 0px;
   width: 80%;
-  max-width: 800px;
+  max-width: 1600px;
+  margin: auto; */
   margin-top: 20px;
-  margin-left: -25%;
+  margin-left: -19%;
   padding: 40px;
-  float: left;
+ float: left;
 }
 
  .banner {
   font-family: halfomania;
-  color: white;
-  font-size: 95px;
-  line-height: 40px;
+  color: #f8f8f8;
+  font-size: 100px;
+  line-height: 60px;
   letter-spacing: 1.5px;
-
+  text-shadow: 0px 0px 15px white;
+  opacity: 95;
+  max-width: 100%;
 }
 
-/* .date {
-  margin: auto;
+.location {
+position: relative;
+left: 4.0em;
 }
-.location{
+
+#location_input {
+text-align: center;
+font-style: italic;
+width: 80%;
+height: 55px;
+margin-top: 13px;
+border-radius: 15px;
+border-style: none;
+}
+
+.date {
   margin: auto;
-}  */
+  margin-top: 15px;
+}
+
+.date_input {
+  
+}
