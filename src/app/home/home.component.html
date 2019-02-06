@@ -6,11 +6,13 @@
 <p></p>
 <input type="date" #minDate value="2019-02-06"> to <input type="date" #maxDate value="2019-02-06">
 <p></p>
-<button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
+<button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find Bands from Songkick by Location and Date</button>
+<p></p>
+check console log for results
 <p></p>
   CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
   <p></p>
   CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
 <p></p>
 
-<button  (click)="getAllSpotifyArtistIds()" class="btn btn-warning">Find songs from artist list</button>
+<button  (click)="getAllSpotifyArtistIds()" class="btn btn-warning">Find songs on Spotify from artist list</button>
