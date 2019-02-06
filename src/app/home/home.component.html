@@ -7,7 +7,7 @@
 
 <!-- <button  (click)="getShowToDisplay(location.value, minDate.value, maxDate.value)" class="btn btn-danger">Find by date</button> -->
 
-<button  (click)="findListOfShowsByCityIdAndDateRange(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
+<button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
 <p></p>
   CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
   <p></p>

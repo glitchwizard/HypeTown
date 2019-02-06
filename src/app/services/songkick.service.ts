@@ -19,6 +19,6 @@ export class SongkickService {
   }
 
   getShowListByCityIdAndDateRangeFromAPI(id, min, max){
-    return this.http.get(`https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=${songkickKey}&$min_date=${min}&$max_date=${max}`)
+    return this.http.get(`https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=${songkickKey}&$min_date=${min}&$max_date=${max}`).map((response: Response) => response.json())
   }
 }
