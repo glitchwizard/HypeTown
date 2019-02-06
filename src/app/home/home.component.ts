@@ -23,6 +23,8 @@ export class HomeComponent {
   public showMaxDate: string;
   public showMinDate: string;
   public artistList: string[] = [];
+  public spotifyArtistListFromQuery: string[] = [];
+  public artistIdListFromSpotify: string[] = [];
 
 
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
@@ -69,16 +71,49 @@ export class HomeComponent {
     });
   }
 
-  generateArtistIdsFromAritstList(){
-    let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"]
+  generateArtistIdFromAritstList(){
+    let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"];
+    let artistToQuery = "The Toasters";
     this.spotifyService.getToken().subscribe((accessTokenResponse) => {
-      this.spotifyService.searchArtistID("The Toasters", accessTokenResponse.access_token)
+      this.spotifyService.searchArtistID(artistToQuery, accessTokenResponse.access_token)
       .subscribe((response) => {
         console.log(response.artists.items[0].name)
         console.log(response.artists.items[0].id)
-      });
-    })
+        response.artists.items.forEach((spotifyArtist) => {
+          this.spotifyArtistListFromQuery.push(spotifyArtist.name);
+        })
+        console.log(this.spotifyArtistListFromQuery);
+
+        let artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
+          return artistToQueryNow==artistToQuery;
+        });
+        console.log(artistMatchIndexPosition);
+
+        if (artistMatchIndexPosition >= 0 ) {
+          this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
+        }
+        console.log(this.artistIdListFromSpotify);
+      })
+    });
   }
+}
+
+  // generateArtistIdsFromAritstList(){
+  //   let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"]
+  //   this.spotifyService.getToken().pipe(
+  //     flatMap((accessTokenResponse) => {
+  //       return this.spotifyService.searchArtistID("The Toasters", accessTokenResponse.access_token)
+  //       .map((response) => {
+  //         console.log('things are happening');
+  //         console.log(response.artists.items);
+  //         // response.artists.items.forEach((singleSpotifyArtistQueryResponse) => {
+  //         //   this.spotifyArtistQueryReturn.push(singleSpotifyArtistQueryResponse)
+  //         // });
+  //         // console.log(this.spotifyArtistQueryReturn);
+  //       });
+  //     })
+  //   )
+  // }
 
 //   getArtistsFromSpotify() {
 //   return this.spotifyAPI.getToken().map(res => {
