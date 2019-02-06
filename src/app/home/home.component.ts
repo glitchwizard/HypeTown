@@ -23,6 +23,7 @@ export class HomeComponent {
   public showMaxDate: string;
   public showMinDate: string;
   public artistList: string[] = [];
+  public artistToQuery: string;
   public spotifyArtistListFromQuery: string[] = [];
   public artistIdListFromSpotify: string[] = [];
 
@@ -67,34 +68,44 @@ export class HomeComponent {
           }
         })
       }
+      console.log('songkick final return:')
+      console.log(this.artistList);
       return this.artistList;
     });
   }
 
   generateArtistIdFromAritstList(){
-    let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"];
-    let artistToQuery = "The Toasters";
-    this.spotifyService.getToken().subscribe((accessTokenResponse) => {
-      this.spotifyService.searchArtistID(artistToQuery, accessTokenResponse.access_token)
-      .subscribe((response) => {
-        console.log(response.artists.items[0].name)
-        console.log(response.artists.items[0].id)
-        response.artists.items.forEach((spotifyArtist) => {
-          this.spotifyArtistListFromQuery.push(spotifyArtist.name);
+    return this.spotifyService.getToken().pipe(
+      flatMap((accessTokenResponse) => {
+        return this.spotifyService.searchArtistID(this.artistToQuery, accessTokenResponse.access_token)
+        .map((response) => {
+          response.artists.items.forEach((spotifyArtist) => {
+            this.spotifyArtistListFromQuery.push(spotifyArtist.name);
+          })
+          let artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
+            return artistToQueryNow == this.artistToQuery;
+          });
+          if (artistMatchIndexPosition >= 0 ) {
+             this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
+             return response.artists.items[artistMatchIndexPosition].id
+          }
         })
-        console.log(this.spotifyArtistListFromQuery);
-
-        let artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
-          return artistToQueryNow==artistToQuery;
-        });
-        console.log(artistMatchIndexPosition);
-
-        if (artistMatchIndexPosition >= 0 ) {
-          this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
-        }
-        console.log(this.artistIdListFromSpotify);
       })
-    });
+    )
+  }
+
+  getAllSpotifyArtistIds(){
+    let dummyArtistList = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"];
+      this.artistToQuery = dummyArtist;
+      console.log('query on: ' + this.artistToQuery);
+      this.generateArtistIdFromAritstList().subscribe((response) => {
+        console.log('response');
+        console.log(response);
+        dummyArtistList.forEach((dummyArtist) => {
+        })
+      });
+    console.log(this.artistIdListFromSpotify);
+
   }
 }
 
@@ -120,5 +131,3 @@ export class HomeComponent {
 //       return this.spotifyAPI.searchArtistID("lil", res.access_token)
 //     });
 // }
-
-}
