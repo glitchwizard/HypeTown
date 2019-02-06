@@ -5,6 +5,7 @@ import { SpotifyService } from '../services/spotify.service'
 import { Artist } from '../models/artist-model';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
+import { flatMap } from 'rxjs/operators';
 
 
 @Component({
@@ -36,18 +37,13 @@ export class HomeComponent {
 
 //This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
 
-  findListOfShowsByCityIdAndDateRange(location:string, minDate: string, maxDate: string) {
+  findListOfShowsByCityIdAndDateRange() {
     console.log('findListOfShowsByCityIdAndDateRange() running...');
-    this.showLocationQuery = location;
-    return this.findCityIdFromSongkick()
-    .subscribe((idResponse) => {
-      return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate)
-      .subscribe((showListResponse) => {
-        console.log(showListResponse);
-        this.showlocations$ = showListResponse.resultsPage.results.event;
+    return this.findCityIdFromSongkick().pipe(flatMap((idResponse) => {
+      return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate).map((showListResponse) => {
         return showListResponse.resultsPage.results.event
       });
-    })
+    }))
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
@@ -55,8 +51,8 @@ export class HomeComponent {
     this.showLocationQuery = location;
     this.showMinDate = minDate;
     this.showMaxDate = maxDate;
-    this.findListOfShowsByCityIdAndDateRange().get((showListResponse) => {
+    this.findListOfShowsByCityIdAndDateRange().subscribe((showListResponse) => {
       console.log(showListResponse);
-    });
+      });
   }
 }
