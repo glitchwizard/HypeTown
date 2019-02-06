@@ -3,25 +3,23 @@
 <div class="container_homeComponent">
   <div class="container">
   <div class="banner">
-    Check for bands in your area
+    LISTEN TO BANDS PLAYING IN YOUR AREA
   </div>
 </div>
-<!-- <div class="container">
-  <div class="row">
-    <div class="location">
-      <input #location value="Los Angeles">
-    </div>
+<div class="container">
+  <div class="location">
+    <input id="location_input" #location value="Los Angeles">
   </div>
   <div class="row">
     <div class="date">
-    <input type="date" #minDate value="2019-02-06"> to <input type="date" #maxDate value="2019-02-06">
+    <input class="date_input" type="date" #minDate value="2019-02-06"> to <input class="date_input" type="date" #maxDate value="2019-02-06">
 
     </div>
   </div>
-  <div class="row">
+  <!-- <div class="row">
   <button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
   </div>
-</div> -->
+</div>
 </div>
 
 
@@ -37,8 +35,8 @@
 
 
 
-<p></p>
+<!-- <p></p>
   CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
   <p></p>
   CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
-<p></p>
+<p></p> -->
