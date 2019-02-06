@@ -9,16 +9,17 @@
 <!-- <div class="container">
   <div class="row">
     <div class="location">
-      <input #location>
+      <input #location value="Los Angeles">
     </div>
   </div>
   <div class="row">
     <div class="date">
-      <input type="date" #min> to <input type="date" #max>
+    <input type="date" #minDate value="2019-02-06"> to <input type="date" #maxDate value="2019-02-06">
+
     </div>
   </div>
   <div class="row">
-    <button  (click)="createPerformanceArray(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
+  <button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
   </div>
 </div> -->
 </div>
@@ -32,16 +33,12 @@
 
 
 
-<ul>
-{{(artists|async)?.artists.items.length}}
-  <li *ngFor="let artist of (artists|async)?.artists.items">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
-</ul>
 
-<ul>
-  <li *ngFor="let id of artistIDs">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
-</ul>
 
-<div *ngIf="locations">
-  <app-locations-list [childLocations]="locations"> </app-locations-list>
 
-</div>
+
+<p></p>
+  CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
+  <p></p>
+  CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
+<p></p>

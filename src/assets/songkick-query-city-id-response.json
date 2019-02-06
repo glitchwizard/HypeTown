@@ -1,0 +1,344 @@
+{
+    "resultsPage": {
+        "status": "ok",
+        "results": {
+            "location": [
+                {
+                    "city": {
+                        "lat": 45.523,
+                        "lng": -122.64,
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "state": {
+                            "displayName": "OR"
+                        },
+                        "displayName": "Portland"
+                    },
+                    "metroArea": {
+                        "lat": 45.523,
+                        "lng": -122.64,
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "uri": "http://www.songkick.com/metro_areas/12283-us-portland?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "OR"
+                        },
+                        "displayName": "Portland",
+                        "id": 12283
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "Portland",
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": null,
+                        "lng": null,
+                        "state": {
+                            "displayName": "TN"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Nashville",
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 36.1716,
+                        "lng": -86.7848,
+                        "uri": "http://www.songkick.com/metro_areas/11104-us-nashville?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "TN"
+                        },
+                        "id": 11104
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "Portland",
+                        "country": {
+                            "displayName": "Australia"
+                        },
+                        "lat": -33.3533,
+                        "lng": 149.984,
+                        "state": {
+                            "displayName": "NSW"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Sydney",
+                        "country": {
+                            "displayName": "Australia"
+                        },
+                        "lat": -33.8833,
+                        "lng": 151.217,
+                        "uri": "http://www.songkick.com/metro_areas/26794-australia-sydney?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "NSW"
+                        },
+                        "id": 26794
+                    }
+                },
+                {
+                    "city": {
+                        "lat": 43.6651,
+                        "lng": -70.2691,
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "state": {
+                            "displayName": "ME"
+                        },
+                        "displayName": "Portland"
+                    },
+                    "metroArea": {
+                        "lat": 43.6651,
+                        "lng": -70.2691,
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "uri": "http://www.songkick.com/metro_areas/24590-us-portland?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "ME"
+                        },
+                        "displayName": "Portland",
+                        "id": 24590
+                    }
+                },
+                {
+                    "metroArea": {
+                        "displayName": "Auckland",
+                        "lat": -36.8667,
+                        "country": {
+                            "displayName": "New Zealand"
+                        },
+                        "lng": 174.767,
+                        "uri": "http://www.songkick.com/metro_areas/31442-new-zealand-auckland?utm_source=55002&utm_medium=partner",
+                        "id": 31442
+                    },
+                    "city": {
+                        "displayName": "Portland",
+                        "lat": -35.8034,
+                        "country": {
+                            "displayName": "New Zealand"
+                        },
+                        "lng": 174.33
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "Portland",
+                        "country": {
+                            "displayName": "Australia"
+                        },
+                        "lat": -38.3463,
+                        "lng": 141.604,
+                        "state": {
+                            "displayName": "VIC"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Ballarat",
+                        "country": {
+                            "displayName": "Australia"
+                        },
+                        "lat": -37.5667,
+                        "lng": 143.85,
+                        "uri": "http://www.songkick.com/metro_areas/26776-australia-ballarat?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "VIC"
+                        },
+                        "id": 26776
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "Lower Portland",
+                        "country": {
+                            "displayName": "Australia"
+                        },
+                        "lat": -33.4384,
+                        "lng": 150.883,
+                        "state": {
+                            "displayName": "NSW"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Sydney",
+                        "country": {
+                            "displayName": "Australia"
+                        },
+                        "lat": -33.8833,
+                        "lng": 151.217,
+                        "uri": "http://www.songkick.com/metro_areas/26794-australia-sydney?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "NSW"
+                        },
+                        "id": 26794
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "South Portland",
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": null,
+                        "lng": null,
+                        "state": {
+                            "displayName": "ME"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Portland",
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 43.6651,
+                        "lng": -70.2691,
+                        "uri": "http://www.songkick.com/metro_areas/24590-us-portland?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "ME"
+                        },
+                        "id": 24590
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "Portland Cove",
+                        "country": {
+                            "displayName": "Canada"
+                        },
+                        "lat": null,
+                        "lng": null,
+                        "state": {
+                            "displayName": "NL"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Saint John's",
+                        "country": {
+                            "displayName": "Canada"
+                        },
+                        "lat": 47.55,
+                        "lng": -52.6667,
+                        "uri": "http://www.songkick.com/metro_areas/33223-canada-saint-johns?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "NL"
+                        },
+                        "id": 33223
+                    }
+                },
+                {
+                    "city": {
+                        "displayName": "Portland Creek",
+                        "country": {
+                            "displayName": "Canada"
+                        },
+                        "lat": null,
+                        "lng": null,
+                        "state": {
+                            "displayName": "NL"
+                        }
+                    },
+                    "metroArea": {
+                        "displayName": "Saint John's",
+                        "country": {
+                            "displayName": "Canada"
+                        },
+                        "lat": 47.55,
+                        "lng": -52.6667,
+                        "uri": "http://www.songkick.com/metro_areas/33223-canada-saint-johns?utm_source=55002&utm_medium=partner",
+                        "state": {
+                            "displayName": "NL"
+                        },
+                        "id": 33223
+                    }
+                },
+                {
+                    "metroArea": {
+                        "state": {
+                            "displayName": "IN"
+                        },
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 40.435822,
+                        "lng": -84.977921,
+                        "displayName": "Portland",
+                        "uri": "http://www.songkick.com/metro_areas/89496-us-portland?utm_source=55002&utm_medium=partner",
+                        "id": 89496
+                    },
+                    "city": {
+                        "state": {
+                            "displayName": "IN"
+                        },
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 40.435822,
+                        "lng": -84.977921,
+                        "displayName": "Portland"
+                    }
+                },
+                {
+                    "metroArea": {
+                        "state": {
+                            "displayName": "PA"
+                        },
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 40.924721,
+                        "lng": -75.098228,
+                        "displayName": "Portland",
+                        "uri": "http://www.songkick.com/metro_areas/89511-us-portland?utm_source=55002&utm_medium=partner",
+                        "id": 89511
+                    },
+                    "city": {
+                        "state": {
+                            "displayName": "PA"
+                        },
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 40.924721,
+                        "lng": -75.098228,
+                        "displayName": "Portland"
+                    }
+                },
+                {
+                    "metroArea": {
+                        "state": {
+                            "displayName": "ND"
+                        },
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 47.498459,
+                        "lng": -97.368462,
+                        "displayName": "Portland",
+                        "uri": "http://www.songkick.com/metro_areas/89506-us-portland?utm_source=55002&utm_medium=partner",
+                        "id": 89506
+                    },
+                    "city": {
+                        "state": {
+                            "displayName": "ND"
+                        },
+                        "country": {
+                            "displayName": "US"
+                        },
+                        "lat": 47.498459,
+                        "lng": -97.368462,
+                        "displayName": "Portland"
+                    }
+                }
+            ]
+        },
+        "perPage": 50,
+        "page": 1,
+        "totalEntries": 13
+    }
+}

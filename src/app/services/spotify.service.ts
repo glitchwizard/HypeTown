@@ -18,7 +18,7 @@ export class SpotifyService {
     headers.append('Authorization', 'Basic ' + this.encoded);
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
     return this._http.post('https://accounts.spotify.com/api/token', params, { headers: headers })
-      .map(res => res.json());
+      .subscribe(results => results.json());
   }
 
   searchArtistID(str: string, token: string) {
@@ -26,6 +26,6 @@ export class SpotifyService {
       let headers = new Headers();
       headers.append('Authorization', 'Bearer ' + token);
       return this._http.get(this.searchUrl, { headers: headers })
-        .map((res: Response) => res.json())
+        .subscribe((res: Response) => {return res.json()})
     }
 }
