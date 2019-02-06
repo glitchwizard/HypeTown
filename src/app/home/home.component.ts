@@ -22,7 +22,7 @@ export class HomeComponent {
 
   locations: Location[] = null;
   artists: Observable<any>;
-
+  // test
   executeOnShows(shows) {
     shows.forEach((show)=> {
       show.performance.forEach((performance)=> {
