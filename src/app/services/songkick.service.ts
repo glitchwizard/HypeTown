@@ -23,20 +23,20 @@ eventsAndBands: any[]=[];
   }
 
 
-  findByDate(location: string, min: string, max: string, component) {
+  findShowsByDate(location: string, minDate: string, maxDate: string, component) {
     this.getLocationId(location).subscribe(response=>{
-      this.performancesByLocation(response,min,max, component)
+      this.performancesByLocation(response,minDate,maxDate, component)
     });
   }
 
   performancesByLocation(response: any, min: string, max: string, component) {
     const id = response.json().resultsPage.results.location[0].metroArea.id
     this.filterByDate(id, min, max).subscribe(response=> {
-      this.reFilter(response.json(), min, max, component);
+      this.filterPerformancesOutByShowDates(response.json(), min, max, component);
     })
   }
 
-  reFilter(response: any, min: string, max: string, component){
+  filterPerformancesOutByShowDates(response: any, min: string, max: string, component){
     response.resultsPage.results.event.forEach((show)=> {
       if((min<=(show.start.date))&&((show.start.date)<=max)) {
         this.eventsAndBands.push(show);
