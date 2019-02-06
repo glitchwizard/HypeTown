@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SongkickService } from '../services/songkick.service';
 import { Event } from '../models/event-model';
 import { SpotifyService } from '../services/spotify.service'
 import { Artist } from '../models/artist-model';
 import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -13,55 +14,68 @@ import { Observable } from 'rxjs/Observable';
   providers:[ SongkickService, SpotifyService ]
 })
 
-export class HomeComponent {
-  artistList: any[] = [];
-  artistObjects: Artist[] = [];
+export class HomeComponent implements OnInit {
+  public showLocationQuery: string;
+  public showLocationIdResponse: Response;
+  public showLocationId: Observable<any>;
+
+  constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
+
+  public ngOnInit() {
+
+  }
+
+  findCityIdFromSongkick() {
+    console.log('something happened');
+    return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
+      return response.resultsPage.results.location[0].metroArea.id
+    })
+  }
 
 
-  constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService) {}
 
-  locations: Location[] = null;
-  artists: Observable<any>;
-  // test
-  executeOnShows(shows) {
-    shows.forEach((show)=> {
-      show.performance.forEach((performance)=> {
-        this.artistObjects.push(new Artist(performance.displayName));
+  findListOfShowsByCityIdAndDateRange(location:string, minDate: string, maxDate: string) {
+    console.log('something happened 2')
+    this.showLocationQuery = location;
+    this.findCityIdFromSongkick().subscribe((idResponse) => {
+      console.log(idResponse);
+      this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, minDate, maxDate).subscribe((showListResponse)=>{
+        console.log('-----show list response-----')
+        console.log(showListResponse.json().resultsPage.results.event[3].performance[0].displayName);
       });
     })
-
-    this.artistObjects.forEach(artist => {
-      console.log('');
-      console.log('-------------------');
-      console.log('forEach Artist.artistName');
-      console.log('artist.artistName: ' + artist.artistName);
-      console.log(this.getIdFromArtist(artist.artistName));
-      return this.getIdFromArtist(artist.artistName);
-    })
   }
 
-  getIdFromArtist(artistName: string){
-    this.getArtistFromSpotify(artistName).subscribe(artistListEmitted => {
-      // artistListEmitted.subscribe((a)=> console.log(a.artists))
-      console.log("getIdFromArtists: artistLastEmitted");
-      console.log(artistListEmitted);
-      return artistListEmitted;
-    })
-  }
 
-  getArtistFromSpotify(artistName: string) {
-    return this.spotifyService.getToken().then(response => {// error don't know what to do with this thing
-      console.log('Final step');
-      console.log(this.spotifyService.searchArtistID(artistName, response.access_token))
-      console.log()
-      return this.spotifyService.searchArtistID(artistName, response.access_token)
-    });
-  }
 
-  createPerformanceArray(location: string, minDate: string, maxDate: string) {
-    this.songkickService.findShowsByDate(location, minDate, maxDate, this)
-  }
-
+  // executeOnShows(shows) {
+  //   shows.forEach((show)=> {
+  //     show.performance.forEach((performance)=> {
+  //       this.artistObjects.push(new Artist(performance.displayName));
+  //     });
+  //   })
+  //
+  //   this.artistObjects.forEach(artist => {
+  //     return this.getIdFromArtist(artist.artistName);
+  //   })
+  // }
+  //
+  // getIdFromArtist(artistName: string){
+  //   this.getArtistFromSpotify(artistName).subscribe(artistListEmitted => {
+  //     // artistListEmitted.subscribe((a)=> console.log(a.artists))
+  //     console.log("getIdFromArtists: artistLastEmitted");
+  //     console.log(artistListEmitted);
+  //     return artistListEmitted;
+  //   })
+  // }
+  //
+  // getArtistFromSpotify(artistName: string) {
+  //   return this.spotifyService.getToken().then(response => {// error don't know what to do with this thing
+  //     console.log('Final step');
+  //     console.log(this.spotifyService.searchArtistID(artistName, response.access_token))
+  //     console.log()
+  //     return this.spotifyService.searchArtistID(artistName, response.access_token)
+  //   });
   // getArtistsFromSpotify() {
   //   return this.spotifyService.getToken().map(res => {
   //     for (let artist of this.artistList) {
@@ -69,7 +83,4 @@ export class HomeComponent {
   //     }
   //   });
   // }
-
-
-
-}
+  }
