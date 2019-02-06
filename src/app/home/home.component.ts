@@ -30,6 +30,7 @@ export class HomeComponent {
   findCityIdFromSongkick() {
     console.log('findCityIdFromSongkick() running...');
     this.showLocation$ = this.songkickService.getLocationIdFromAPI(this.showLocationQuery);
+
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
       this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
       return response.resultsPage.results.location[0].metroArea.id
@@ -68,5 +69,21 @@ export class HomeComponent {
     });
   }
 
+  generateArtistIdsFromAritstList(){
+    let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"]
+    this.spotifyService.getToken().subscribe((accessTokenResponse) => {
+      this.spotifyService.searchArtistID("The Toasters", accessTokenResponse.access_token)
+      .subscribe((response) => {
+        console.log(response.artists.items[0].name)
+        console.log(response.artists.items[0].id)
+      });
+    })
+  }
+
+//   getArtistsFromSpotify() {
+//   return this.spotifyAPI.getToken().map(res => {
+//       return this.spotifyAPI.searchArtistID("lil", res.access_token)
+//     });
+// }
 
 }
