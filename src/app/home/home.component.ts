@@ -36,54 +36,22 @@ export class HomeComponent {
 //This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
 
   findListOfShowsByCityIdAndDateRange(location:string, minDate: string, maxDate: string) {
-    console.log('something happened 2')
+    console.log('something happened 2');
+
     this.showLocationQuery = location;
+
     this.findCityIdFromSongkick().subscribe((idResponse) => {
       console.log(idResponse);
-      this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, minDate, maxDate).subscribe((showListResponse)=>{
+
+      this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, minDate, maxDate).subscribe((showListResponse) => {
         console.log('-----show list response-----')
-        for (let i = 0; i < showListResponse.json().resultsPage.results.event.length; i++) {
-            console.log(showListResponse.json().resultsPage.results.event[i]);
+        for (let i = 0; i < 5; i++) {
+          console.log('---...---');
+          console.log(showListResponse.json().resultsPage.results.event[i]);
         }
+        return showListResponse.json().resultsPage.results.event
+
       });
     })
   }
-
-
-
-  // executeOnShows(shows) {
-  //   shows.forEach((show)=> {
-  //     show.performance.forEach((performance)=> {
-  //       this.artistObjects.push(new Artist(performance.displayName));
-  //     });
-  //   })
-  //
-  //   this.artistObjects.forEach(artist => {
-  //     return this.getIdFromArtist(artist.artistName);
-  //   })
-  // }
-  //
-  // getIdFromArtist(artistName: string){
-  //   this.getArtistFromSpotify(artistName).subscribe(artistListEmitted => {
-  //     // artistListEmitted.subscribe((a)=> console.log(a.artists))
-  //     console.log("getIdFromArtists: artistLastEmitted");
-  //     console.log(artistListEmitted);
-  //     return artistListEmitted;
-  //   })
-  // }
-  //
-  // getArtistFromSpotify(artistName: string) {
-  //   return this.spotifyService.getToken().then(response => {// error don't know what to do with this thing
-  //     console.log('Final step');
-  //     console.log(this.spotifyService.searchArtistID(artistName, response.access_token))
-  //     console.log()
-  //     return this.spotifyService.searchArtistID(artistName, response.access_token)
-  //   });
-  // getArtistsFromSpotify() {
-  //   return this.spotifyService.getToken().map(res => {
-  //     for (let artist of this.artistList) {
-  //       return this.spotifyService.searchArtistID(artist, res.access_token)
-  //     }
-  //   });
-  // }
-  }
+}
