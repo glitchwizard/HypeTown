@@ -17,7 +17,8 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
   public showLocationQuery: string;
   public showLocationIdResponse: Response;
-  public showLocationId: Observable<any>;
+  public showLocationId: string;
+  public showLocation$: Observable<any>;
 
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
 
@@ -27,12 +28,15 @@ export class HomeComponent implements OnInit {
 
   findCityIdFromSongkick() {
     console.log('something happened');
+    this.showLocation$ = this.songkickService.getLocationIdFromAPI(this.showLocationQuery);
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
+      this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
+
       return response.resultsPage.results.location[0].metroArea.id
     })
   }
 
-
+//This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
 
   findListOfShowsByCityIdAndDateRange(location:string, minDate: string, maxDate: string) {
     console.log('something happened 2')
