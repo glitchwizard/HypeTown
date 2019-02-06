@@ -2,41 +2,42 @@
 
 <div class="container_homeComponent">
   <div class="container">
-  <div class="banner">
-    LISTEN TO BANDS PLAYING IN YOUR AREA
-  </div>
-</div>
-<div class="container">
-  <div class="location">
-    <input id="location_input" #location value="Los Angeles">
-  </div>
-  <div class="row">
-    <div class="date">
-    <input class="date_input" type="date" #minDate value="2019-02-06"> to <input class="date_input" type="date" #maxDate value="2019-02-06">
-
+    <div class="banner">
+      LISTEN TO BANDS PLAYING IN YOUR AREA
     </div>
   </div>
-  <!-- <div class="row">
-  <button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
-  </div>
-</div>
-</div>
+  <div class="container">
+    <div class="location">
+      <input id="location_input" #location value="Los Angeles">
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <input class="date_input" type="date" #minDate value="2019-02-06">
+      </div>
+      <div class="col-lg-6">
+        <input class="date_input" type="date" #maxDate value="2019-02-06">
+      </div>
+    </div>
+    <div id="findMusicRow" class="row">
+
+        <button id="search_button" (click)="getArtistsFromSpotify()">Find Music</button>
+
+    </div>
+
+    </div>
 
 
 
 
 
-<!-- <button  (click)="getArtistsFromSpotify()" class="btn btn-warning">Test Spotify Call</button> -->
 
 
 
 
 
-
-
-
-<!-- <p></p>
+  <!-- <p></p>
   CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
   <p></p>
   CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
-<p></p> -->
+  <p></p> -->
