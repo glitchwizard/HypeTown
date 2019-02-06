@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+  font-family: halfomania;
+  src: url(assets/font/Halfomania-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: vindica;
+  src: url(assets/font/Vindica.otf) format("opentype");
+}
+
+@font-face {
+  font-family: highlander;
+  src: url(assets/font/HighlanderExtensionss.ttf) format("truetype");
+}
+
+.containerMain {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(313deg, #6c3acf, #1c5b8f, #4062ff, #3697c9, #1bb160, #3ea500, #afb800, #be6019, #a71e1e, #b315a8);
+  background-size: 2000% 2000%;
+  background-size: 1000% 1000%;
+  -webkit-animation: HypeTown 30s ease infinite;
+  -moz-animation: HypeTown 30s ease infinite;
+  animation: HypeTown 30s ease infinite;
+  box-shadow: inset 0px, 0px, 150px black;
+  z-index: 0;
+}
+
+@-webkit-keyframes HypeTown {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@-moz-keyframes HypeTown {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes HypeTown {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+
+.containerMain:after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(circle, transparent 10%, black 180%);
+  z-index: 0;
+}
+
+
+.banner {
+  text-align: center;
+}
+#title {
+  font-family: 'Vindica';
+  color: #F8FBFF;
+  font-size: 250px;
+  opacity: 1;
+}
+.weirdfont {
+  font-family: highlander;
+  font-size: 250px;
+  position: relative;
+  z-index: 0.5;
+  top: -400px;
+  color: #F8FBFF
+}
+
+.content {
+  left: 38%;
+  right: 05%;
+  position: absolute;
+  z-index: 1;
+  bottom: 600px;
+
+}

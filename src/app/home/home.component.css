@@ -1,0 +1,29 @@
+
+.container_homeComponent {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: -25%;
+  padding: 40px;
+  float: left;
+}
+
+ .banner {
+  font-family: halfomania;
+  color: white;
+  font-size: 95px;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+
+}
+
+/* .date {
+  margin: auto;
+}
+.location{
+  margin: auto;
+}  */
