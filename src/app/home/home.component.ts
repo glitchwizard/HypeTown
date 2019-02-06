@@ -14,49 +14,62 @@ import { Observable } from 'rxjs/Observable';
 })
 
 export class HomeComponent {
-  artistList: any[];
+  artistList: any[] = [];
+  artistObjects: Artist[] = [];
 
 
-  constructor(private  songkickService: SongkickService, public spotifyAPI: SpotifyService) {}
+  constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService) {}
 
   locations: Location[] = null;
   artists: Observable<any>;
 
   executeOnShows(shows) {
-    const artistList = [];
-    console.log(this.artistList)
-    console.log("got into executeOnShows");
     shows.forEach((show)=> {
-      console.log("show date: " + show.start.date);
       show.performance.forEach((performance)=> {
-        console.log("artist name: " + performance.displayName)
-        artistList.push(performance.displayName);
+        this.artistObjects.push(new Artist(performance.displayName));
       });
     })
-    this.artistList = artistList;
-    console.log(this.artistList);
+
+    this.artistObjects.forEach(artist => {
+      console.log('');
+      console.log('-------------------');
+      console.log('forEach Artist.artistName');
+      console.log('artist.artistName: ' + artist.artistName);
+      console.log(this.getIdFromArtist(artist.artistName));
+      return this.getIdFromArtist(artist.artistName);
+    })
   }
 
-
-  createPerformanceArray(location: string, min: string, max: string) {
-    this.songkickService.findByDate(location, min, max, this)
+  getIdFromArtist(artistName: string){
+    this.getArtistFromSpotify(artistName).subscribe(artistListEmitted => {
+      // artistListEmitted.subscribe((a)=> console.log(a.artists))
+      console.log("getIdFromArtists: artistLastEmitted");
+      console.log(artistListEmitted);
+      return artistListEmitted;
+    })
   }
 
-  getArtistsFromSpotify() {
-    return this.spotifyAPI.getToken().map(res => {
-      for (let artist of this.artistList) {
-        return this.spotifyAPI.searchArtistID(artist, res.access_token)
-      }
-      // return this.spotifyAPI.searchArtistID("lil", res.access_token)
+  getArtistFromSpotify(artistName: string) {
+    return this.spotifyService.getToken().then(response => {// error don't know what to do with this thing
+      console.log('Final step');
+      console.log(this.spotifyService.searchArtistID(artistName, response.access_token))
+      console.log()
+      return this.spotifyService.searchArtistID(artistName, response.access_token)
     });
   }
 
-  getIdsFromArtists(){
-    this.getArtistsFromSpotify().subscribe((artistListEmitted) => {
-      // artistListEmitted.subscribe((a)=> console.log(a.artists))
-      console.log(this.artists)
-      this.artists=artistListEmitted;
-    })
+  createPerformanceArray(location: string, minDate: string, maxDate: string) {
+    this.songkickService.findShowsByDate(location, minDate, maxDate, this)
   }
+
+  // getArtistsFromSpotify() {
+  //   return this.spotifyService.getToken().map(res => {
+  //     for (let artist of this.artistList) {
+  //       return this.spotifyService.searchArtistID(artist, res.access_token)
+  //     }
+  //   });
+  // }
+
+
 
 }
