@@ -5,33 +5,9 @@
 <input #location value="Los Angeles">
 <input type="date" #minDate value="2019-02-06"> to <input type="date" #maxDate value="2019-02-06">
 
-<!-- <button  (click)="getShowToDisplay(location.value, minDate.value, maxDate.value)" class="btn btn-danger">Find by date</button> -->
-
 <button  (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" class="btn btn-info">Find by Location</button>
 <p></p>
   CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
   <p></p>
   CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
 <p></p>
-<!-- <button  (click)="getArtistsFromSpotify()" class="btn btn-warning">Test Spotify Call</button> -->
-
-
-<!--
-<button  (click)="getIdFromArtist()" class="btn btn-warning">Test Artist ID Call</button>
-
-
-
-<ul>
-{{(artists|async)?.artists.items.length}}
-  <li *ngFor="let artist of (artists|async)?.artists.items">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
-</ul>
-
-
-<ul>
-  <li *ngFor="let id of artistIDs">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
-</ul>
-
-<div *ngIf="locations">
-  <app-locations-list [childLocations]="locations"> </app-locations-list>
-
-</div> -->

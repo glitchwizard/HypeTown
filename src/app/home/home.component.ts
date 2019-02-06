@@ -22,6 +22,7 @@ export class HomeComponent {
   public showlocations$: Observable<any[]>;
   public showMaxDate: string;
   public showMinDate: string;
+  public artistList: string[] = [];
 
 
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
@@ -39,11 +40,15 @@ export class HomeComponent {
 
   findListOfShowsByCityIdAndDateRange() {
     console.log('findListOfShowsByCityIdAndDateRange() running...');
-    return this.findCityIdFromSongkick().pipe(flatMap((idResponse) => {
-      return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate).map((showListResponse) => {
-        return showListResponse.resultsPage.results.event
-      });
-    }))
+    return this.findCityIdFromSongkick()
+    .pipe(
+      flatMap((idResponse) => {
+      return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate)
+        .map((showListResponse) => {
+          return showListResponse.resultsPage.results.event
+        });
+      })
+    )
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
@@ -52,7 +57,15 @@ export class HomeComponent {
     this.showMinDate = minDate;
     this.showMaxDate = maxDate;
     this.findListOfShowsByCityIdAndDateRange().subscribe((showListResponse) => {
-      console.log(showListResponse);
+      for (let i = 0; i < 5; i++) {
+          showListResponse[i].performance.forEach((artist) => {
+            if(artist.billing == "headline") {
+              console.log(artist.displayName);
+              this.artistList.push(artist.displayName);
+              console.log(this.artistList);
+            }
+          })
+      }
       });
   }
 }
