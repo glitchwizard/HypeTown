@@ -1,12 +1,34 @@
-<p>
-  home works!
-</p>
 
-<input #location>
-<input type="date" #min> to <input type="date" #max>
 
-<button  (click)="createPerformanceArray(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
-<button  (click)="getArtistsFromSpotify()" class="btn btn-warning">Test Spotify Call</button>
+<div class="container_homeComponent">
+  <div class="container">
+  <div class="banner">
+    Check for bands in your area
+  </div>
+</div>
+<!-- <div class="container">
+  <div class="row">
+    <div class="location">
+      <input #location>
+    </div>
+  </div>
+  <div class="row">
+    <div class="date">
+      <input type="date" #min> to <input type="date" #max>
+    </div>
+  </div>
+  <div class="row">
+    <button  (click)="createPerformanceArray(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
+  </div>
+</div> -->
+</div>
+
+
+
+
+
+<!-- <button  (click)="getArtistsFromSpotify()" class="btn btn-warning">Test Spotify Call</button> -->
+
 
 
 
@@ -14,8 +36,6 @@
 {{(artists|async)?.artists.items.length}}
   <li *ngFor="let artist of (artists|async)?.artists.items">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
 </ul>
-
-<button  (click)="getIdsFromArtists()" class="btn btn-warning">Test Artist ID Call</button>
 
 <ul>
   <li *ngFor="let id of artistIDs">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
