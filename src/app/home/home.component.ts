@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SongkickService } from '../services/songkick.service';
 import { Event } from '../models/event-model';
 import { SpotifyService } from '../services/spotify.service'
@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
   providers:[ SongkickService, SpotifyService ]
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   public showLocationQuery: string;
   public showLocationIdResponse: Response;
   public showLocationId: string;
@@ -22,16 +22,13 @@ export class HomeComponent implements OnInit {
 
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
 
-  public ngOnInit() {
-
-  }
-
   findCityIdFromSongkick() {
     console.log('something happened');
+
     this.showLocation$ = this.songkickService.getLocationIdFromAPI(this.showLocationQuery);
+
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
       this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
-
       return response.resultsPage.results.location[0].metroArea.id
     })
   }
@@ -45,7 +42,9 @@ export class HomeComponent implements OnInit {
       console.log(idResponse);
       this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, minDate, maxDate).subscribe((showListResponse)=>{
         console.log('-----show list response-----')
-        console.log(showListResponse.json().resultsPage.results.event[3].performance[0].displayName);
+        for (let i = 0; i < showListResponse.json().resultsPage.results.event.length; i++) {
+            console.log(showListResponse.json().resultsPage.results.event[i]);
+        }
       });
     })
   }
