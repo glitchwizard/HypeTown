@@ -10,38 +10,15 @@ const httpOptions = {
 
 @Injectable()
 export class SongkickService {
-eventsAndBands: any[]=[];
+  eventsAndBands: any[]=[];
 
   constructor(private http: Http) { }
 
-  getLocationId(query: string) {
-    return this.http.get(`https://api.songkick.com/api/3.0/search/locations.json?apikey=${songkickKey}&query=${query}`)
+  getLocationIdFromAPI(query: string) {
+    return this.http.get(`https://api.songkick.com/api/3.0/search/locations.json?apikey=${songkickKey}&query=${query}`).map((response: Response) => response.json())
   }
 
-  filterByDate(id, min, max){
-    return this.http.get(`https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=${songkickKey}&$min_date=${min}&$max_date=${max}`)
-  }
-
-
-  findByDate(location: string, min: string, max: string, executeOnShows) {
-    this.getLocationId(location).subscribe(response=>{
-      this.performancesByLocation(response,min,max, executeOnShows)
-    });
-  }
-
-  performancesByLocation(response: any, min: string, max: string, executeOnShows) {
-    const id = response.json().resultsPage.results.location[0].metroArea.id
-    this.filterByDate(id, min, max).subscribe(response=> {
-      this.reFilter(response.json(), min, max, executeOnShows);
-    })
-  }
-
-  reFilter(response: any, min: string, max: string, executeOnShows){
-    response.resultsPage.results.event.forEach((show)=> {
-      if((min<=(show.start.date))&&((show.start.date)<=max)) {
-        this.eventsAndBands.push(show);
-      }
-    });
-    executeOnShows(this.eventsAndBands)
+  getShowListByCityIdAndDateRangeFromAPI(id, min, max){
+    return this.http.get(`https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=${songkickKey}&$min_date=${min}&$max_date=${max}`).map((response: Response) => response.json())
   }
 }

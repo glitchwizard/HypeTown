@@ -4,6 +4,8 @@ import { Event } from '../models/event-model';
 import { SpotifyService } from '../services/spotify.service'
 import { Artist } from '../models/artist-model';
 import { Observable } from 'rxjs/Observable';
+import { HttpClient } from '@angular/common/http';
+import { flatMap } from 'rxjs/operators';
 
 
 @Component({
@@ -14,42 +16,57 @@ import { Observable } from 'rxjs/Observable';
 })
 
 export class HomeComponent {
+  public showLocationQuery: string;
+  public showLocationId: string;
+  public showLocation$: Observable<any>;
+  public showlocations$: Observable<any[]>;
+  public showMaxDate: string;
+  public showMinDate: string;
+  public artistList: string[] = [];
 
 
-  constructor(private  songkickService: SongkickService, public spotifyAPI: SpotifyService) {}
+  constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
 
-locations: Location[] = null;
+  findCityIdFromSongkick() {
+    console.log('findCityIdFromSongkick() running...');
+    this.showLocation$ = this.songkickService.getLocationIdFromAPI(this.showLocationQuery);
+    return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
+      this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
+      return response.resultsPage.results.location[0].metroArea.id
+    })
+  }
 
-artists: Observable<any>;
-artistIDs: string[];
+//This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
 
-  executeOnShows(shows) {
-    console.log("got into executeOnShows");
-    shows.forEach(function(show) {
-      console.log("show date: " + show.start.date);
-      show.performance.forEach(function(performance) {
-        console.log(" - " + performance.displayName)
+  findListOfShowsByCityIdAndDateRange() {
+    console.log('findListOfShowsByCityIdAndDateRange() running...');
+    return this.findCityIdFromSongkick()
+    .pipe(
+      flatMap((idResponse) => {
+      return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate)
+        .map((showListResponse) => {
+          return showListResponse.resultsPage.results.event
+        });
       })
-    })
+    )
   }
 
-createPerformanceArray(location: string, min: string, max: string) {
-  this.songkickService.findByDate(location, min, max, this.executeOnShows)
-}
-
-
-  getArtistsFromSpotify() {
-    return this.spotifyAPI.getToken().map(res => {
-        return this.spotifyAPI.searchArtistID("lil", res.access_token)
-      });
+  generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
+    console.log('generateArrayOfHeadlinerPerformances() running...');
+    this.showLocationQuery = location;
+    this.showMinDate = minDate;
+    this.showMaxDate = maxDate;
+    return this.findListOfShowsByCityIdAndDateRange().subscribe((showListResponse) => {
+      for (let i = 0; i < 5; i++) {
+        showListResponse[i].performance.forEach((artist) => {
+          if(artist.billing == "headline") {
+            this.artistList.push(artist.displayName);
+          }
+        })
+      }
+      return this.artistList;
+    });
   }
 
-  getIdsFromArtists(){
-    this.getArtistsFromSpotify().subscribe((artistListEmitted) => {
-      // artistListEmitted.subscribe((a)=> console.log(a.artists))
-      console.log(this.artists)
-      this.artists=artistListEmitted;
-    })
-  }
 
 }
