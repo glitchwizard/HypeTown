@@ -56,16 +56,17 @@ export class HomeComponent {
     this.showLocationQuery = location;
     this.showMinDate = minDate;
     this.showMaxDate = maxDate;
-    this.findListOfShowsByCityIdAndDateRange().subscribe((showListResponse) => {
+    return this.findListOfShowsByCityIdAndDateRange().subscribe((showListResponse) => {
       for (let i = 0; i < 5; i++) {
-          showListResponse[i].performance.forEach((artist) => {
-            if(artist.billing == "headline") {
-              console.log(artist.displayName);
-              this.artistList.push(artist.displayName);
-              console.log(this.artistList);
-            }
-          })
+        showListResponse[i].performance.forEach((artist) => {
+          if(artist.billing == "headline") {
+            this.artistList.push(artist.displayName);
+          }
+        })
       }
-      });
+      return this.artistList;
+    });
   }
+
+
 }
