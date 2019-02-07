@@ -60,7 +60,6 @@ export class HomeComponent {
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
-
     console.log('generateArrayOfHeadlinerPerformances() running...');
     this.showLocationQuery = location;
     this.showMinDate = minDate;
@@ -75,8 +74,6 @@ export class HomeComponent {
       }
       console.log('songkick final return:');
       console.log(this.artistList);
-      this.showArtists$ = this.artistList;
-      console.log(this.showArtists$)
       return this.artistList;
     });
   }
@@ -88,35 +85,23 @@ export class HomeComponent {
     }
   }
 
-  generateArtistIdFromAritstList(){
-    return this.spotifyService.getToken().pipe(
-      flatMap((accessTokenResponse) => {
-        return this.spotifyService.searchArtistID(this.artistToQuery, accessTokenResponse.access_token)
-        .map((response) => {
-          response.artists.items.forEach((spotifyArtist) => {
-            this.spotifyArtistListFromQuery.push(spotifyArtist.name);
-          })
-          let artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
-            return artistToQueryNow == this.artistToQuery;
-          });
-          if (artistMatchIndexPosition >= 0 ) {
-             this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
-             return response.artists.items[artistMatchIndexPosition].id
-          }
-        })
-      })
-    )
+  generateArtistIdFromArtist(artistName) {
+      return this.spotifyService.getToken().pipe(
+        flatMap((accessTokenResponse) => {
+          return this.spotifyService.searchArtistID(artistName, accessTokenResponse.access_token);
+               })
+      );
   }
 
 // TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop.
   getAllSpotifyArtistObjects() { // populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
     const APICallArray = [];
-    const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
+    // const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
     const ArtistOutputArray = [];
 
-    for (let i = 0; i < dummyArtistList.length; i++) {
-      this.artistToQuery = dummyArtistList[i];
-      APICallArray.push(this.generateArtistIdFromArtist(dummyArtistList[i]));
+    for (let i = 0; i < this.artistList.length; i++) {
+      this.artistToQuery = this.artistList[i];
+      APICallArray.push(this.generateArtistIdFromArtist(this.artistList[i]));
     }
 
     for (let i = 0; i < APICallArray.length; i++) {
