@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { LocationsListComponent } from './locations-list/locations-list.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

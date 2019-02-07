@@ -6,13 +6,15 @@ import { Artist } from '../models/artist-model';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
 import { flatMap } from 'rxjs/operators';
+import { SlideUpandDown } from './slideupanddown';
 
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers:[ SongkickService, SpotifyService ]
+  providers:[ SongkickService, SpotifyService ],
+  animations: [SlideUpandDown]
 })
 
 export class HomeComponent {
@@ -27,6 +29,8 @@ export class HomeComponent {
   public artistToQuery: string;
   public spotifyArtistListFromQuery: string[] = [];
   public artistIdListFromSpotify: string[] = [];
+
+  animationState="out";
 
 
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
@@ -57,6 +61,7 @@ export class HomeComponent {
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
+  
     console.log('generateArrayOfHeadlinerPerformances() running...');
     this.showLocationQuery = location;
     this.showMinDate = minDate;
@@ -75,6 +80,13 @@ export class HomeComponent {
       console.log(this.showArtists$)
       return this.artistList;
     });
+  }
+
+  toggle(divName: string) {
+    if(divName === "results")
+    {
+       this.animationState = this.animationState === 'out' ? 'in' : 'out';
+    }
   }
 
   generateArtistIdFromAritstList(){

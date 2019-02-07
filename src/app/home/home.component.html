@@ -21,12 +21,12 @@
     </div>
     <div id="findMusicRow" class="row">
 
-      <button id="search_button" (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)">Find Music</button>
+      <button id="search_button" (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" (click)="toggle('results')">Find Music</button>
 
     </div>
   </div>
 
-<div class="container results" *ngIf="show_results">
+<div class="container results" [@slideUpandDown]="animationState">
   <div class="row">
     <div  class="col-lg-6">
       <div class="container apiData">
