@@ -23,6 +23,10 @@ export class HomeComponent {
   public showMaxDate: string;
   public showMinDate: string;
   public artistList: string[] = [];
+  public showArtists$: Observable<any[]>;
+  public artistToQuery: string;
+  public spotifyArtistListFromQuery: string[] = [];
+  public artistIdListFromSpotify: string[] = [];
 
 
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
@@ -30,6 +34,7 @@ export class HomeComponent {
   findCityIdFromSongkick() {
     console.log('findCityIdFromSongkick() running...');
     this.showLocation$ = this.songkickService.getLocationIdFromAPI(this.showLocationQuery);
+
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
       this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
       return response.resultsPage.results.location[0].metroArea.id
@@ -64,9 +69,68 @@ export class HomeComponent {
           }
         })
       }
+      console.log('songkick final return:')
+      console.log(this.artistList);
+      this.showArtists$ = this.artistList;
+      console.log(this.showArtists$)
       return this.artistList;
     });
   }
 
+  generateArtistIdFromAritstList(){
+    return this.spotifyService.getToken().pipe(
+      flatMap((accessTokenResponse) => {
+        return this.spotifyService.searchArtistID(this.artistToQuery, accessTokenResponse.access_token)
+        .map((response) => {
+          response.artists.items.forEach((spotifyArtist) => {
+            this.spotifyArtistListFromQuery.push(spotifyArtist.name);
+          })
+          let artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
+            return artistToQueryNow == this.artistToQuery;
+          });
+          if (artistMatchIndexPosition >= 0 ) {
+             this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
+             return response.artists.items[artistMatchIndexPosition].id
+          }
+        })
+      })
+    )
+  }
 
+  getAllSpotifyArtistIds(){
+    let dummyArtistList = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"];
+      this.artistToQuery = dummyArtist;
+      console.log('query on: ' + this.artistToQuery);
+      this.generateArtistIdFromAritstList().subscribe((response) => {
+        console.log('response');
+        console.log(response);
+        dummyArtistList.forEach((dummyArtist) => {
+        })
+      });
+    console.log(this.artistIdListFromSpotify);
+
+  }
 }
+
+  // generateArtistIdsFromAritstList(){
+  //   let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"]
+  //   this.spotifyService.getToken().pipe(
+  //     flatMap((accessTokenResponse) => {
+  //       return this.spotifyService.searchArtistID("The Toasters", accessTokenResponse.access_token)
+  //       .map((response) => {
+  //         console.log('things are happening');
+  //         console.log(response.artists.items);
+  //         // response.artists.items.forEach((singleSpotifyArtistQueryResponse) => {
+  //         //   this.spotifyArtistQueryReturn.push(singleSpotifyArtistQueryResponse)
+  //         // });
+  //         // console.log(this.spotifyArtistQueryReturn);
+  //       });
+  //     })
+  //   )
+  // }
+
+//   getArtistsFromSpotify() {
+//   return this.spotifyAPI.getToken().map(res => {
+//       return this.spotifyAPI.searchArtistID("lil", res.access_token)
+//     });
+// }
