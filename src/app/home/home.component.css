@@ -95,10 +95,10 @@ margin-top: 13px;
 .results{
   /* display: none; */
   position: relative;
-  margin-top: 80px;
-  width: 200%;
+  margin-top: 100px;
+  width: 250%;
   right: 19%;
-  margin-left: 0px;
+  margin-left: 18%;
 }
 
 .artist-list {
@@ -107,4 +107,14 @@ margin-top: 13px;
 
 .artist-section {
   border: 1px solid black;
+}
+
+.api-data {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.artist-row {
+  border-bottom: 1px solid black
 }
