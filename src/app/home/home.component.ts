@@ -7,6 +7,7 @@ import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
 import { flatMap } from 'rxjs/operators';
 import { SlideUpandDown } from './slideupanddown';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 @Component({
@@ -24,6 +25,7 @@ export class HomeComponent {
   public showlocations$: Observable<any[]>;
   public showMaxDate: string;
   public showMinDate: string;
+  public showList: Event[] = [];
   public artistList: string[] = [];
   public showArtists$: Observable<any[]>;
   public artistToQuery: string;
@@ -32,7 +34,7 @@ export class HomeComponent {
   animationState="out";
 
 
-  constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient) {}
+  constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient,public sanitizer: DomSanitizer) {}
 
   findCityIdFromSongkick() {
     console.log('findCityIdFromSongkick() running...');
@@ -53,19 +55,28 @@ export class HomeComponent {
       flatMap((idResponse) => {
       return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate)
         .map((showListResponse) => {
-          return showListResponse.resultsPage.results.event
+          console.log(showListResponse)
+            showListResponse.resultsPage.results.event.forEach((artist) => {
+              let artistName = artist.performance[0].displayName;
+              let artistVenue = artist.venue.displayName;
+              let uri = artist.uri;
+              const newEvent = new Event (artistName, artistVenue, uri);
+              this.showList.push(newEvent);
+            });
+            console.log(this.showList)
+            return showListResponse.resultsPage.results.event
         });
       })
     );
   }
 
-  generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
+generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
     console.log('generateArrayOfHeadlinerPerformances() running...');
     this.showLocationQuery = location;
     this.showMinDate = minDate;
     this.showMaxDate = maxDate;
     return this.findListOfShowsByCityIdAndDateRange().subscribe((showListResponse) => {
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 9; i++) {
         showListResponse[i].performance.forEach((artist) => {
           if(artist.billing == "headline") {
             this.artistList.push(artist.displayName);
@@ -77,6 +88,7 @@ export class HomeComponent {
       return this.artistList;
     });
   }
+
 
   toggle(divName: string) {
     if(divName === "results")
@@ -93,7 +105,7 @@ export class HomeComponent {
       );
   }
 // Populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
-  getAllSpotifyArtistObjects() { 
+  getAllSpotifyArtistObjects() {
     const APICallArray = [];
     // const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
     const ArtistOutputArray = [];
@@ -110,7 +122,14 @@ export class HomeComponent {
         });
     }
     this.spotifyArtistListFromQuery = ArtistOutputArray;
-    console.log(ArtistOutputArray);
     return ArtistOutputArray;
+  }
+
+  getSpotifyPlayerURL(input){
+    console.log('input');
+    console.log(input);
+    let outputString = 'https://open.spotify.com/embed/artist/' + input;
+    console.log("outputstring " + outputString)
+    return outputString;
   }
 }

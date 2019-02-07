@@ -1,6 +1,7 @@
 export class Event {
   constructor (
-    public eventName: string,
-    public bandName: string
+    public artistName: string,
+    public venueName: string,
+    public uri: string
   ) {}
 }
