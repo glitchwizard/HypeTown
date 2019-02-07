@@ -32,12 +32,17 @@ Here are some links in case you need information about setup for other operating
 
 ## Known Bugs
 
-* Spotify login not currently functional.
+* Not all artists songs are returned
+* Artists from spotify are displayed out of order on the page
+* Moving too quickly on the page can create an endless loop somehow.
+* Making multiple searches without refreshing the page will append to the current lists, rather than start the whole thing over again
+* CSS :hover sizing could be a bit smoother
 
 ## Support and contact details
 Michael Brown :: [gmail](jmichaelbrown132737@gmail.com)
 Charley McGowan :: [GitHub](https://github.com/glitchwizard)
 Devin Sweeting :: [gmail](devinsweeting@gmail.com)
+Chris Rudnicky :: [gmail](chrisrudnicky@gmail.com)
 
 ## Technologies Used
 (This wonderful table was lovingly pilfered from [Tanvi Garg](https://github.com/TanviCodeLife) and modestly edited for personal sensibilities.)
