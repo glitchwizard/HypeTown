@@ -36,8 +36,8 @@ export class HomeComponent {
 
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
       this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
-      return response.resultsPage.results.location[0].metroArea.id
-    })
+      return response.resultsPage.results.location[0].metroArea.id;
+    });
   }
 
 //This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
@@ -52,7 +52,7 @@ export class HomeComponent {
           return showListResponse.resultsPage.results.event
         });
       })
-    )
+    );
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
@@ -66,40 +66,40 @@ export class HomeComponent {
           if(artist.billing == "headline") {
             this.artistList.push(artist.displayName);
           }
-        })
+        });
       }
-      console.log('songkick final return:')
+      console.log('songkick final return:');
       console.log(this.artistList);
       return this.artistList;
     });
   }
 
-  generateArtistIdFromArtist(){
+  generateArtistIdFromArtist(dummyVar){
     return this.spotifyService.getToken().pipe(
       flatMap((accessTokenResponse) => {
 
         console.log('generateArtistIdFromArtist() this.artistToQuery');
-        console.log(this.artistToQuery);
-        console.log('------------------')
+        console.log(dummyVar);
+        console.log('------------------');
 
-        return this.spotifyService.searchArtistID(this.artistToQuery, accessTokenResponse.access_token)
+        return this.spotifyService.searchArtistID(dummyVar, accessTokenResponse.access_token)
         .map((response) => {
           response.artists.items.forEach((spotifyArtist) => {
             this.spotifyArtistListFromQuery.push(spotifyArtist.name);
-          })
-          let artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
-            return artistToQueryNow == this.artistToQuery;
+          });
+          const artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
+            return artistToQueryNow === dummyVar;
           });
           if (artistMatchIndexPosition >= 0 ) {
              this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
-             return response.artists.items[artistMatchIndexPosition].id
+             return response.artists.items[artistMatchIndexPosition].id;
           }
-        })
+        });
       })
-    )
+    );
   }
 
-  returnSingleArtistId(artistName){
+  returnSingleArtistId(artistName) {
     this.artistToQuery = artistName;
     this.generateArtistIdFromArtist().subscribe((idResponse) => {
       return idResponse;
@@ -108,32 +108,34 @@ export class HomeComponent {
 
 // TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop. 
   getAllSpotifyArtistIds(){
-    let dummyArtistList = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs"];
-    this.artistToQuery = "The Toasters";
+    let dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
+    this.artistToQuery = 'The Toasters';
+
     // this.generateArtistIdFromArtist().subscribe((idResponse) => {
     //
     // })
 
    for (let i = 0; i < dummyArtistList.length; i++) {
-      console.log('dummyArtistList[i]');
-      console.log(dummyArtistList[i]);
+      // console.log('dummyArtistList[i]');
+      // console.log(dummyArtistList[i]);
 
       this.artistToQuery = dummyArtistList[i];
 
       console.log('this.artistToQuery');
       console.log(this.artistToQuery);
       console.log('');
-
-      this.generateArtistIdFromArtist().subscribe((response) => {
-        console.log('--^^--')
-        console.log('dummyArtistList[i]--2');
-        console.log(dummyArtistList[i]);
-        console.log('response');
-        console.log(response);
-        console.log('this.artistToQuery');
-        console.log(this.artistToQuery);
-        console.log('--vv--')
-        this.newProperty.push(response);
+      setTimeout((dummyVar) => {
+        this.generateArtistIdFromArtist(dummyArtistList[i]).subscribe((response) => {
+          console.log('--^^--');
+          console.log('dummyArtistList[i]--2');
+          console.log(dummyArtistList[i]);
+          console.log('response');
+          console.log(response);
+          console.log('this.artistToQuery');
+          console.log(this.artistToQuery);
+          console.log('--vv--');
+          this.newProperty.push(response);
+      }, 2000);
       });
 
     }
