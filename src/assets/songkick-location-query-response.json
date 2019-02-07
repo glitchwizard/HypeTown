@@ -1,0 +1,3558 @@
+{
+    "resultsPage": {
+        "status": "ok",
+        "results": {
+            "event": [
+                {
+                    "type": "Concert",
+                    "venue": {
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner",
+                            "id": 17835,
+                            "state": {
+                                "displayName": "CA"
+                            }
+                        },
+                        "displayName": "Hotel Cafe",
+                        "lat": 34.1004371,
+                        "uri": "http://www.songkick.com/venues/90-hotel-cafe?utm_source=55002&utm_medium=partner",
+                        "id": 90,
+                        "lng": -118.329829
+                    },
+                    "status": "ok",
+                    "performance": [
+                        {
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "identifier": [],
+                                "displayName": "loren north",
+                                "uri": "http://www.songkick.com/artists/9228359-loren-north?utm_source=55002&utm_medium=partner",
+                                "id": 9228359
+                            },
+                            "displayName": "loren north",
+                            "id": 60970329
+                        }
+                    ],
+                    "ageRestriction": "21+",
+                    "popularity": 0.000024,
+                    "start": {
+                        "datetime": "2017-10-17T08:30:00-0700",
+                        "time": "08:30:00",
+                        "date": "2017-10-17"
+                    },
+                    "displayName": "loren north at Hotel Cafe (October 17, 2017)",
+                    "location": {
+                        "city": "Hollywood, CA, US",
+                        "lat": 34.1004371,
+                        "lng": -118.329829
+                    },
+                    "uri": "http://www.songkick.com/concerts/31566649-loren-north-at-hotel-cafe?utm_source=55002&utm_medium=partner",
+                    "id": 31566649
+                },
+                {
+                    "type": "Concert",
+                    "venue": {
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner",
+                            "id": 17835,
+                            "state": {
+                                "displayName": "CA"
+                            }
+                        },
+                        "displayName": "The Federal Bar",
+                        "lat": 34.1672065,
+                        "uri": "http://www.songkick.com/venues/1329346-federal-bar?utm_source=55002&utm_medium=partner",
+                        "id": 1329346,
+                        "lng": -118.3761634
+                    },
+                    "status": "ok",
+                    "performance": [
+                        {
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "identifier": [],
+                                "displayName": "Randy Emata",
+                                "uri": "http://www.songkick.com/artists/2106145-randy-emata?utm_source=55002&utm_medium=partner",
+                                "id": 2106145
+                            },
+                            "displayName": "Randy Emata",
+                            "id": 60799674
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "popularity": 0.000001,
+                    "start": {
+                        "datetime": "2017-10-31T21:30:00-0700",
+                        "time": "21:30:00",
+                        "date": "2017-10-31"
+                    },
+                    "displayName": "Randy Emata at The Federal Bar (October 31, 2017)",
+                    "location": {
+                        "city": "North Hollywood, CA, US",
+                        "lat": 34.1672065,
+                        "lng": -118.3761634
+                    },
+                    "uri": "http://www.songkick.com/concerts/31467664-randy-emata-at-federal-bar?utm_source=55002&utm_medium=partner",
+                    "id": 31467664
+                },
+                {
+                    "id": 37050869,
+                    "displayName": "Pradise 94 2019",
+                    "type": "Festival",
+                    "uri": "http://www.songkick.com/festivals/2885729-pradise-94/id/37050869-pradise-94-2019?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0,
+                    "start": {
+                        "date": "2019-02-04",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 70474544,
+                            "displayName": "Dyekho",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9855474,
+                                "displayName": "Dyekho",
+                                "uri": "http://www.songkick.com/artists/9855474-dyekho?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": null,
+                        "displayName": "Unknown venue",
+                        "uri": null,
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.10885,
+                        "lng": -118.22342
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.10885,
+                        "lng": -118.22342
+                    },
+                    "end": {
+                        "date": "2019-02-28",
+                        "time": null,
+                        "datetime": null
+                    },
+                    "series": {
+                        "displayName": "Pradise 94"
+                    }
+                },
+                {
+                    "id": 34886404,
+                    "displayName": "The Lemon Twigs with Jackie Cohen at El Rey Theatre (February 6, 2019) (CANCELLED) ",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/34886404-lemon-twigs-at-el-rey-theatre?utm_source=55002&utm_medium=partner",
+                    "status": "cancelled",
+                    "popularity": 0.007024,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:30:00-0800",
+                        "time": "19:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 66864809,
+                            "displayName": "The Lemon Twigs",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 8344013,
+                                "displayName": "The Lemon Twigs",
+                                "uri": "http://www.songkick.com/artists/8344013-lemon-twigs?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "f32d94e8-8d55-4ee2-9077-53d1c024a03b",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:f32d94e8-8d55-4ee2-9077-53d1c024a03b.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68809094,
+                            "displayName": "Jackie Cohen",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 8708633,
+                                "displayName": "Jackie Cohen",
+                                "uri": "http://www.songkick.com/artists/8708633-jackie-cohen?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "4e64836d-7c44-4775-b127-42cde0ca3bb5",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:4e64836d-7c44-4775-b127-42cde0ca3bb5.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1039,
+                        "displayName": "El Rey Theatre",
+                        "uri": "http://www.songkick.com/venues/1039-el-rey-theatre?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.0624,
+                        "lng": -118.3488
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.0624,
+                        "lng": -118.3488
+                    }
+                },
+                {
+                    "id": 35844544,
+                    "displayName": "The Toasters with The Scotch Bonnets, Bite Me Bambi, and Los Nauticals at Alex's Bar (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35844544-toasters-at-alexs-bar?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.005277,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 68484919,
+                            "displayName": "The Toasters",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 335768,
+                                "displayName": "The Toasters",
+                                "uri": "http://www.songkick.com/artists/335768-toasters?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "f5d56157-c5fe-490f-bf91-8d200e7f9b5f",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:f5d56157-c5fe-490f-bf91-8d200e7f9b5f.json"
+                                    },
+                                    {
+                                        "mbid": "42a45de5-8cc4-4ae0-9e49-8753b69a7537",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:42a45de5-8cc4-4ae0-9e49-8753b69a7537.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68484924,
+                            "displayName": "The Scotch Bonnets",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 1285624,
+                                "displayName": "The Scotch Bonnets",
+                                "uri": "http://www.songkick.com/artists/1285624-scotch-bonnets?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "7cbe1553-e82c-43c1-8220-feaa09b9914b",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:7cbe1553-e82c-43c1-8220-feaa09b9914b.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68617199,
+                            "displayName": "Bite Me Bambi",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 9594354,
+                                "displayName": "Bite Me Bambi",
+                                "uri": "http://www.songkick.com/artists/9594354-bite-me-bambi?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69257964,
+                            "displayName": "Los Nauticals",
+                            "billing": "support",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 9303409,
+                                "displayName": "Los Nauticals",
+                                "uri": "http://www.songkick.com/artists/9303409-los-nauticals?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 31241,
+                        "displayName": "Alex's Bar",
+                        "uri": "http://www.songkick.com/venues/31241-alexs-bar?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.78284,
+                        "lng": -118.15743
+                    },
+                    "location": {
+                        "city": "Long Beach, CA, US",
+                        "lat": 33.78284,
+                        "lng": -118.15743
+                    }
+                },
+                {
+                    "id": 35924234,
+                    "displayName": "Blackberry Smoke and Nikki Lane with The Bluegrass Situation at Fonda Theatre (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35924234-blackberry-smoke-at-fonda-theatre?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.009646,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 68615139,
+                            "displayName": "Blackberry Smoke",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 568895,
+                                "displayName": "Blackberry Smoke",
+                                "uri": "http://www.songkick.com/artists/568895-blackberry-smoke?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "1576a26e-f77d-47ac-87f2-4f610c141ac6",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:1576a26e-f77d-47ac-87f2-4f610c141ac6.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68615144,
+                            "displayName": "Nikki Lane",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 2798361,
+                                "displayName": "Nikki Lane",
+                                "uri": "http://www.songkick.com/artists/2798361-nikki-lane?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "967181a8-b54d-407b-93e4-2988bd97fa39",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:967181a8-b54d-407b-93e4-2988bd97fa39.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69669569,
+                            "displayName": "The Bluegrass Situation",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 7844064,
+                                "displayName": "The Bluegrass Situation",
+                                "uri": "http://www.songkick.com/artists/7844064-bluegrass-situation?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 187523,
+                        "displayName": "Fonda Theatre",
+                        "uri": "http://www.songkick.com/venues/187523-fonda-theatre?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.10127,
+                        "lng": -118.32325
+                    },
+                    "location": {
+                        "city": "Hollywood, CA, US",
+                        "lat": 34.10127,
+                        "lng": -118.32325
+                    }
+                },
+                {
+                    "id": 36001909,
+                    "displayName": "Van Morrison at The Wiltern (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36001909-van-morrison-at-wiltern?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.19293,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 68741699,
+                            "displayName": "Van Morrison",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 156780,
+                                "displayName": "Van Morrison",
+                                "uri": "http://www.songkick.com/artists/156780-van-morrison?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "a41ac10f-0a56-4672-9161-b83f9b223559",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:a41ac10f-0a56-4672-9161-b83f9b223559.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 780,
+                        "displayName": "The Wiltern",
+                        "uri": "http://www.songkick.com/venues/780-wiltern?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.06194,
+                        "lng": -118.30884
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.06194,
+                        "lng": -118.30884
+                    }
+                },
+                {
+                    "id": 36010229,
+                    "displayName": "DRAMA with Claire George at The Echo (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36010229-drama-at-echo?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.003199,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:30:00-0800",
+                        "time": "20:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 68764069,
+                            "displayName": "DRAMA",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9530509,
+                                "displayName": "DRAMA",
+                                "uri": "http://www.songkick.com/artists/9530509-drama?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "b7d2b5dc-c8c5-4c0c-865b-3acc705f6da4",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:b7d2b5dc-c8c5-4c0c-865b-3acc705f6da4.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68754384,
+                            "displayName": "Claire George",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 8904839,
+                                "displayName": "Claire George",
+                                "uri": "http://www.songkick.com/artists/8904839-claire-george?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "b971407a-9155-4c78-a3f2-20232b0e0f01",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:b971407a-9155-4c78-a3f2-20232b0e0f01.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 150303,
+                        "displayName": "The Echo",
+                        "uri": "http://www.songkick.com/venues/150303-echo?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.07933,
+                        "lng": -118.2691
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.07933,
+                        "lng": -118.2691
+                    }
+                },
+                {
+                    "id": 36163549,
+                    "displayName": "Okilly Dokilly with Playboy Manbaby at Discovery Ventura (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36163549-okilly-dokilly-at-discovery-ventura?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000764,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69006974,
+                            "displayName": "Okilly Dokilly",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 8595229,
+                                "displayName": "Okilly Dokilly",
+                                "uri": "http://www.songkick.com/artists/8595229-okilly-dokilly?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "11ccc4f3-9563-4b68-a39b-9656804a976a",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:11ccc4f3-9563-4b68-a39b-9656804a976a.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69006979,
+                            "displayName": "Playboy Manbaby",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 4963633,
+                                "displayName": "Playboy Manbaby",
+                                "uri": "http://www.songkick.com/artists/4963633-playboy-manbaby?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "5607e2d3-9606-44a9-a2d2-26e9eecb7845",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:5607e2d3-9606-44a9-a2d2-26e9eecb7845.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 2676128,
+                        "displayName": "Discovery Ventura",
+                        "uri": "http://www.songkick.com/venues/2676128-discovery-ventura?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.2746,
+                        "lng": -119.27308
+                    },
+                    "location": {
+                        "city": "Ventura, CA, US",
+                        "lat": 34.2746,
+                        "lng": -119.27308
+                    }
+                },
+                {
+                    "id": 36197969,
+                    "displayName": "Asteroid Shop and Blackbird Days at Redwood Bar & Grill (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36197969-asteroid-shop-at-redwood-bar-and-grill?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000022,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69063734,
+                            "displayName": "Asteroid Shop",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 4148761,
+                                "displayName": "Asteroid Shop",
+                                "uri": "http://www.songkick.com/artists/4148761-asteroid-shop?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69099344,
+                            "displayName": "Blackbird Days",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9779584,
+                                "displayName": "Blackbird Days",
+                                "uri": "http://www.songkick.com/artists/9779584-blackbird-days?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 35846,
+                        "displayName": "Redwood Bar & Grill",
+                        "uri": "http://www.songkick.com/venues/35846-redwood-bar-and-grill?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.0528,
+                        "lng": -118.24724
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.0528,
+                        "lng": -118.24724
+                    }
+                },
+                {
+                    "id": 36227914,
+                    "displayName": "Gang of Four at The Roxy Theatre (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36227914-gang-of-four-at-roxy-theatre?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.021698,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69110729,
+                            "displayName": "Gang of Four",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 393675,
+                                "displayName": "Gang of Four",
+                                "uri": "http://www.songkick.com/artists/393675-gang-of-four?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "d8661c02-f423-4d72-8044-40ff05daf7a1",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:d8661c02-f423-4d72-8044-40ff05daf7a1.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1300,
+                        "displayName": "The Roxy Theatre",
+                        "uri": "http://www.songkick.com/venues/1300-roxy-theatre?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.09071,
+                        "lng": -118.38797
+                    },
+                    "location": {
+                        "city": "West Hollywood, CA, US",
+                        "lat": 34.09071,
+                        "lng": -118.38797
+                    }
+                },
+                {
+                    "id": 36317314,
+                    "displayName": "Leyla McCalla with Sunny War at Zebulon (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36317314-leyla-mccalla-at-zebulon?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000852,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T21:00:00-0800",
+                        "time": "21:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69257989,
+                            "displayName": "Leyla McCalla",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 4507068,
+                                "displayName": "Leyla McCalla",
+                                "uri": "http://www.songkick.com/artists/4507068-leyla-mccalla?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "dda5815a-fd69-4c18-81f0-f11dcaee5641",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:dda5815a-fd69-4c18-81f0-f11dcaee5641.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69350974,
+                            "displayName": "Sunny War",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 2506681,
+                                "displayName": "Sunny War",
+                                "uri": "http://www.songkick.com/artists/2506681-sunny-war?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3497989,
+                        "displayName": "Zebulon",
+                        "uri": "http://www.songkick.com/venues/3497989-zebulon?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.10719,
+                        "lng": -118.25477
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.10719,
+                        "lng": -118.25477
+                    }
+                },
+                {
+                    "id": 36401304,
+                    "displayName": "Dan Croll with Luke Sital-Singh at Moroccan Lounge (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36401304-dan-croll-at-moroccan-lounge?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.026952,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:30:00-0800",
+                        "time": "19:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69397619,
+                            "displayName": "Dan Croll",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 4111601,
+                                "displayName": "Dan Croll",
+                                "uri": "http://www.songkick.com/artists/4111601-dan-croll?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "480801c6-bd47-4d0d-b9fc-c20289529760",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:480801c6-bd47-4d0d-b9fc-c20289529760.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69752779,
+                            "displayName": "Luke Sital-Singh",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 5106198,
+                                "displayName": "Luke Sital-Singh",
+                                "uri": "http://www.songkick.com/artists/5106198-luke-sitalsingh?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "f03fe6bb-0fe6-42cf-843c-ef00d8759c8e",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:f03fe6bb-0fe6-42cf-843c-ef00d8759c8e.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3631474,
+                        "displayName": "Moroccan Lounge",
+                        "uri": "http://www.songkick.com/venues/3631474-moroccan-lounge?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.0487,
+                        "lng": -118.2337
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.0487,
+                        "lng": -118.2337
+                    }
+                },
+                {
+                    "id": 36442694,
+                    "displayName": "Dolly at The Hollywood Pantages Theatre (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36442694-dolly-at-hollywood-pantages-theatre?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.001647,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69468914,
+                            "displayName": "Dolly",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 468621,
+                                "displayName": "Dolly",
+                                "uri": "http://www.songkick.com/artists/468621-dolly?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "dbfb1d93-162b-4320-90f6-bab84b5e0e7a",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:dbfb1d93-162b-4320-90f6-bab84b5e0e7a.json"
+                                    },
+                                    {
+                                        "mbid": "29b4ba11-6696-4af9-81e2-514449a98ff8",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:29b4ba11-6696-4af9-81e2-514449a98ff8.json"
+                                    },
+                                    {
+                                        "mbid": "d55af5f9-5c19-4424-bd13-1ace7c83601c",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:d55af5f9-5c19-4424-bd13-1ace7c83601c.json"
+                                    },
+                                    {
+                                        "mbid": "2c11a270-7a6f-4e7b-9eae-c7b0370fd73c",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:2c11a270-7a6f-4e7b-9eae-c7b0370fd73c.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3278569,
+                        "displayName": "The Hollywood Pantages Theatre",
+                        "uri": "http://www.songkick.com/venues/3278569-hollywood-pantages-theatre?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.10193,
+                        "lng": -118.32576
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.10193,
+                        "lng": -118.32576
+                    }
+                },
+                {
+                    "id": 36487489,
+                    "displayName": "George Krikes at Flight of Voices (Salt Room) (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36487489-george-krikes-at-flight-of-voices?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000146,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 69544184,
+                            "displayName": "George Krikes",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 1890550,
+                                "displayName": "George Krikes",
+                                "uri": "http://www.songkick.com/artists/1890550-george-krikes?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "1c5d3feb-5c5c-406d-be75-f27b7bd4513b",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:1c5d3feb-5c5c-406d-be75-f27b7bd4513b.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 4056399,
+                        "displayName": "Flight of Voices (Salt Room)",
+                        "uri": "http://www.songkick.com/venues/4056399-flight-of-voices?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": null,
+                        "lng": null
+                    },
+                    "location": {
+                        "city": "Beverly Hills, CA, US",
+                        "lat": 34.0731,
+                        "lng": -118.399
+                    }
+                },
+                {
+                    "id": 36521294,
+                    "displayName": "DJ Tom Chasteen with Boss Harmony, Judah Eskender Tafari, and The Rootsman at Echoplex (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36521294-dj-tom-chasteen-at-echoplex?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.00066,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T21:00:00-0800",
+                        "time": "21:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69601174,
+                            "displayName": "DJ Tom Chasteen",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 6609239,
+                                "displayName": "DJ Tom Chasteen",
+                                "uri": "http://www.songkick.com/artists/6609239-dj-tom-chasteen?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69601179,
+                            "displayName": "Boss Harmony",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 5365123,
+                                "displayName": "Boss Harmony",
+                                "uri": "http://www.songkick.com/artists/5365123-boss-harmony?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69860209,
+                            "displayName": "Judah Eskender Tafari",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 802271,
+                                "displayName": "Judah Eskender Tafari",
+                                "uri": "http://www.songkick.com/artists/802271-judah-eskender-tafari?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "42f0a913-1b31-43e0-ba67-5b4258d919eb",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:42f0a913-1b31-43e0-ba67-5b4258d919eb.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69860214,
+                            "displayName": "The Rootsman",
+                            "billing": "support",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 538356,
+                                "displayName": "The Rootsman",
+                                "uri": "http://www.songkick.com/artists/538356-rootsman?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "4cd3c79d-c30a-4c2f-a48f-156d1ba10a50",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:4cd3c79d-c30a-4c2f-a48f-156d1ba10a50.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 4665,
+                        "displayName": "Echoplex",
+                        "uri": "http://www.songkick.com/venues/4665-echoplex?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.07759,
+                        "lng": -118.26061
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.07759,
+                        "lng": -118.26061
+                    }
+                },
+                {
+                    "id": 36553974,
+                    "displayName": "The Sediment Club and Warm Drag with Purity at The Satellite (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36553974-sediment-club-at-satellite?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000119,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:30:00-0800",
+                        "time": "20:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69655829,
+                            "displayName": "The Sediment Club",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 2340313,
+                                "displayName": "The Sediment Club",
+                                "uri": "http://www.songkick.com/artists/2340313-sediment-club?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69655834,
+                            "displayName": "Warm Drag",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9592704,
+                                "displayName": "Warm Drag",
+                                "uri": "http://www.songkick.com/artists/9592704-warm-drag?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "689d4432-d574-4395-8e54-f253a1f3b5d3",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:689d4432-d574-4395-8e54-f253a1f3b5d3.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69655839,
+                            "displayName": "Purity",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 426360,
+                                "displayName": "Purity",
+                                "uri": "http://www.songkick.com/artists/426360-purity?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "9afad8a9-d047-4f89-9619-bf3b5507d6fb",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:9afad8a9-d047-4f89-9619-bf3b5507d6fb.json"
+                                    },
+                                    {
+                                        "mbid": "2048ae39-5830-40f3-9221-70e269637e1e",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:2048ae39-5830-40f3-9221-70e269637e1e.json"
+                                    },
+                                    {
+                                        "mbid": "532dbc58-2fb5-45d7-9fba-fc0bc691014b",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:532dbc58-2fb5-45d7-9fba-fc0bc691014b.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 299,
+                        "displayName": "The Satellite",
+                        "uri": "http://www.songkick.com/venues/299-satellite?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.08988,
+                        "lng": -118.26824
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.08988,
+                        "lng": -118.26824
+                    }
+                },
+                {
+                    "id": 36591704,
+                    "displayName": "Gianni Taylor, Mike's Dead, Woody Pond, LostInVegas, and 1 more… at The Study (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36591704-gianni-taylor-at-study?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000108,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 69720339,
+                            "displayName": "Gianni Taylor",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9379014,
+                                "displayName": "Gianni Taylor",
+                                "uri": "http://www.songkick.com/artists/9379014-gianni-taylor?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69840294,
+                            "displayName": "Mike's Dead",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9820739,
+                                "displayName": "Mike's Dead",
+                                "uri": "http://www.songkick.com/artists/9820739-mikes-dead?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69840299,
+                            "displayName": "Woody Pond",
+                            "billing": "headline",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 9820749,
+                                "displayName": "Woody Pond",
+                                "uri": "http://www.songkick.com/artists/9820749-woody-pond?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69840304,
+                            "displayName": "LostInVegas",
+                            "billing": "headline",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 9820754,
+                                "displayName": "LostInVegas",
+                                "uri": "http://www.songkick.com/artists/9820754-lostinvegas?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69840309,
+                            "displayName": "MILES/ Mix'd Millenial",
+                            "billing": "headline",
+                            "billingIndex": 5,
+                            "artist": {
+                                "id": 9827149,
+                                "displayName": "MILES/ Mix'd Millenial",
+                                "uri": "http://www.songkick.com/artists/9827149-miles-mixd-millenial?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": "21+",
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3007974,
+                        "displayName": "The Study",
+                        "uri": "http://www.songkick.com/venues/3007974-study?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.10128,
+                        "lng": -118.32858
+                    },
+                    "location": {
+                        "city": "Hollywood, CA, US",
+                        "lat": 34.10128,
+                        "lng": -118.32858
+                    }
+                },
+                {
+                    "id": 36609424,
+                    "displayName": "Caleb Henry and the Customs with Christie Huff at The Fifth at Grand Legacy at the Park (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36609424-caleb-henry-and-the-customs-at-fifth-at-grand-legacy-at-the-park?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000006,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T16:30:00-0800",
+                        "time": "16:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70450674,
+                            "displayName": "Caleb Henry and the Customs",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9853764,
+                                "displayName": "Caleb Henry and the Customs",
+                                "uri": "http://www.songkick.com/artists/9853764-caleb-henry-and-the-customs?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 69749294,
+                            "displayName": "Christie Huff",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 7668659,
+                                "displayName": "Christie Huff",
+                                "uri": "http://www.songkick.com/artists/7668659-christie-huff?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3324999,
+                        "displayName": "The Fifth at Grand Legacy at the Park",
+                        "uri": "http://www.songkick.com/venues/3324999-fifth-at-grand-legacy-at-the-park?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.80781,
+                        "lng": -117.91468
+                    },
+                    "location": {
+                        "city": "Anaheim, CA, US",
+                        "lat": 33.80781,
+                        "lng": -117.91468
+                    }
+                },
+                {
+                    "id": 36625334,
+                    "displayName": "Goldcap at Station 1640 (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36625334-goldcap-at-station-1640?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000383,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T22:00:00-0800",
+                        "time": "22:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69775959,
+                            "displayName": "Goldcap",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 8282143,
+                                "displayName": "Goldcap",
+                                "uri": "http://www.songkick.com/artists/8282143-goldcap?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3266029,
+                        "displayName": "Station 1640",
+                        "uri": "http://www.songkick.com/venues/3266029-station-1640?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.10102,
+                        "lng": -118.32931
+                    },
+                    "location": {
+                        "city": "Hollywood, CA, US",
+                        "lat": 34.10102,
+                        "lng": -118.32931
+                    }
+                },
+                {
+                    "id": 36656869,
+                    "displayName": "// PRIVATE EVENT at Troubadour (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36656869-private-event-at-troubadour?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000011,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T21:00:00-0800",
+                        "time": "21:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 69827089,
+                            "displayName": "// PRIVATE EVENT",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 8281758,
+                                "displayName": "// PRIVATE EVENT",
+                                "uri": "http://www.songkick.com/artists/8281758-private-event?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 16268,
+                        "displayName": "Troubadour",
+                        "uri": "http://www.songkick.com/venues/16268-troubadour?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.08152,
+                        "lng": -118.38918
+                    },
+                    "location": {
+                        "city": "West Hollywood, CA, US",
+                        "lat": 34.08152,
+                        "lng": -118.38918
+                    }
+                },
+                {
+                    "id": 36677259,
+                    "displayName": "Surfer Joe and Lorenzo Surfer Joe at Clifton’s Pacific Seas (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36677259-surfer-joe-at-cliftons-pacific-seas?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000028,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 69861319,
+                            "displayName": "Surfer Joe",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 7803174,
+                                "displayName": "Surfer Joe",
+                                "uri": "http://www.songkick.com/artists/7803174-surfer-joe?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "38830fe1-d4f5-46d4-80af-827bf304dc62",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:38830fe1-d4f5-46d4-80af-827bf304dc62.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69861324,
+                            "displayName": "Lorenzo Surfer Joe",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 6732254,
+                                "displayName": "Lorenzo Surfer Joe",
+                                "uri": "http://www.songkick.com/artists/6732254-lorenzo-surfer-joe?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 4073314,
+                        "displayName": "Clifton’s Pacific Seas",
+                        "uri": "http://www.songkick.com/venues/4073314-cliftons-pacific-seas?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04527,
+                        "lng": -118.25287
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04527,
+                        "lng": -118.25287
+                    }
+                },
+                {
+                    "id": 36679049,
+                    "displayName": "Tokyo Kuntpunch at Comedy Store (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36679049-tokyo-kuntpunch-at-comedy-store?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 69864379,
+                            "displayName": "Tokyo Kuntpunch",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9828299,
+                                "displayName": "Tokyo Kuntpunch",
+                                "uri": "http://www.songkick.com/artists/9828299-tokyo-kuntpunch?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 194,
+                        "displayName": "Comedy Store",
+                        "uri": "http://www.songkick.com/venues/194-comedy-store?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.09507,
+                        "lng": -118.374
+                    },
+                    "location": {
+                        "city": "West Hollywood, CA, US",
+                        "lat": 34.09507,
+                        "lng": -118.374
+                    }
+                },
+                {
+                    "id": 36793689,
+                    "displayName": "Mendeleyev at SOhO (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36793689-mendeleyev-at-soho?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000008,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T18:30:00-0800",
+                        "time": "18:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70037254,
+                            "displayName": "Mendeleyev",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 8127483,
+                                "displayName": "Mendeleyev",
+                                "uri": "http://www.songkick.com/artists/8127483-mendeleyev?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 53324,
+                        "displayName": "SOhO",
+                        "uri": "http://www.songkick.com/venues/53324-soho?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.4238,
+                        "lng": -119.70528
+                    },
+                    "location": {
+                        "city": "Santa Barbara, CA, US",
+                        "lat": 34.4238,
+                        "lng": -119.70528
+                    }
+                },
+                {
+                    "id": 36801034,
+                    "displayName": "Fashawn with Ezri, Stro, 070 Phi, and 1 more… at Constellation Room at the Observatory (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36801034-fashawn-at-constellation-room-at-the-observatory?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.007617,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T21:00:00-0800",
+                        "time": "21:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70049979,
+                            "displayName": "Fashawn",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 1990601,
+                                "displayName": "Fashawn",
+                                "uri": "http://www.songkick.com/artists/1990601-fashawn?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "e65fdcd8-e02d-486b-ba9f-61fca43c37ab",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:e65fdcd8-e02d-486b-ba9f-61fca43c37ab.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70281794,
+                            "displayName": "Ezri",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9290259,
+                                "displayName": "Ezri",
+                                "uri": "http://www.songkick.com/artists/9290259-ezri?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "69f32330-72d0-44ce-9cc0-dd0d8185d46f",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:69f32330-72d0-44ce-9cc0-dd0d8185d46f.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70281799,
+                            "displayName": "Stro",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 753835,
+                                "displayName": "Stro",
+                                "uri": "http://www.songkick.com/artists/753835-stro?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "da761f42-3c97-461b-8c30-e6c5b8129614",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:da761f42-3c97-461b-8c30-e6c5b8129614.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70281789,
+                            "displayName": "070 Phi",
+                            "billing": "support",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 9829339,
+                                "displayName": "070 Phi",
+                                "uri": "http://www.songkick.com/artists/9829339-070-phi?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70282804,
+                            "displayName": "Cantrell",
+                            "billing": "support",
+                            "billingIndex": 5,
+                            "artist": {
+                                "id": 9826114,
+                                "displayName": "Cantrell",
+                                "uri": "http://www.songkick.com/artists/9826114-cantrell?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1484608,
+                        "displayName": "Constellation Room at the Observatory",
+                        "uri": "http://www.songkick.com/venues/1484608-constellation-room-at-the-observatory?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.69984,
+                        "lng": -117.91945
+                    },
+                    "location": {
+                        "city": "Santa Ana, CA, US",
+                        "lat": 33.69984,
+                        "lng": -117.91945
+                    }
+                },
+                {
+                    "id": 36803494,
+                    "displayName": "Davey and The Midnights at The Lincoln (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36803494-davey-and-the-midnights-at-lincoln?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000001,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 70054649,
+                            "displayName": "Davey and The Midnights",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9686094,
+                                "displayName": "Davey and The Midnights",
+                                "uri": "http://www.songkick.com/artists/9686094-davey-and-the-midnights?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3557049,
+                        "displayName": "The Lincoln",
+                        "uri": "http://www.songkick.com/venues/3557049-lincoln?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.99157,
+                        "lng": -118.44836
+                    },
+                    "location": {
+                        "city": "Venice, CA, US",
+                        "lat": 33.99157,
+                        "lng": -118.44836
+                    }
+                },
+                {
+                    "id": 36870184,
+                    "displayName": "Camila Cabello at Orpheum Theatre (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36870184-camila-cabello-at-orpheum-theatre?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.126464,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70168309,
+                            "displayName": "Camila Cabello",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 8504398,
+                                "displayName": "Camila Cabello",
+                                "uri": "http://www.songkick.com/artists/8504398-camila-cabello?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "01b8b5bf-06cb-45da-85fb-61ada72fcd69",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:01b8b5bf-06cb-45da-85fb-61ada72fcd69.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1262,
+                        "displayName": "Orpheum Theatre",
+                        "uri": "http://www.songkick.com/venues/1262-orpheum-theatre?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04267,
+                        "lng": -118.25553
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04267,
+                        "lng": -118.25553
+                    }
+                },
+                {
+                    "id": 36898739,
+                    "displayName": "Vure with Franklin Manor at Skinny's Lounge (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36898739-vure-at-skinnys-lounge?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000012,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70216694,
+                            "displayName": "Vure",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9840159,
+                                "displayName": "Vure",
+                                "uri": "http://www.songkick.com/artists/9840159-vure?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70216699,
+                            "displayName": "Franklin Manor",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 3539526,
+                                "displayName": "Franklin Manor",
+                                "uri": "http://www.songkick.com/artists/3539526-franklin-manor?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 49494,
+                        "displayName": "Skinny's Lounge",
+                        "uri": "http://www.songkick.com/venues/49494-skinnys-lounge?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.16044,
+                        "lng": -118.37214
+                    },
+                    "location": {
+                        "city": "North Hollywood, CA, US",
+                        "lat": 34.16044,
+                        "lng": -118.37214
+                    }
+                },
+                {
+                    "id": 36919899,
+                    "displayName": "Holy Water Buffalo at The Love Song (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36919899-holy-water-buffalo-at-love-song?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000081,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:30:00-0800",
+                        "time": "19:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70252064,
+                            "displayName": "Holy Water Buffalo",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 3975576,
+                                "displayName": "Holy Water Buffalo",
+                                "uri": "http://www.songkick.com/artists/3975576-holy-water-buffalo?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "4153b351-e1c1-41b0-8a62-ae167715de87",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:4153b351-e1c1-41b0-8a62-ae167715de87.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 2934453,
+                        "displayName": "The Love Song",
+                        "uri": "http://www.songkick.com/venues/2934453-love-song?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04704,
+                        "lng": -118.248
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04704,
+                        "lng": -118.248
+                    }
+                },
+                {
+                    "id": 36921404,
+                    "displayName": "Daria Black, Little Galaxies, Wild Signals, Triangle Fire, and 1 more… at The Virgil (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36921404-daria-black-at-virgil?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.00002,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70254554,
+                            "displayName": "Daria Black",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9558619,
+                                "displayName": "Daria Black",
+                                "uri": "http://www.songkick.com/artists/9558619-daria-black?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70254559,
+                            "displayName": "Little Galaxies",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 7129624,
+                                "displayName": "Little Galaxies",
+                                "uri": "http://www.songkick.com/artists/7129624-little-galaxies?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70254564,
+                            "displayName": "Wild Signals",
+                            "billing": "headline",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 9821534,
+                                "displayName": "Wild Signals",
+                                "uri": "http://www.songkick.com/artists/9821534-wild-signals?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70254569,
+                            "displayName": "Triangle Fire",
+                            "billing": "headline",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 6158709,
+                                "displayName": "Triangle Fire",
+                                "uri": "http://www.songkick.com/artists/6158709-triangle-fire?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70254574,
+                            "displayName": "Stains of a Sunflower",
+                            "billing": "headline",
+                            "billingIndex": 5,
+                            "artist": {
+                                "id": 8831129,
+                                "displayName": "Stains of a Sunflower",
+                                "uri": "http://www.songkick.com/artists/8831129-stains-of-a-sunflower?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1780163,
+                        "displayName": "The Virgil",
+                        "uri": "http://www.songkick.com/venues/1780163-virgil?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.09104,
+                        "lng": -118.28722
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.09104,
+                        "lng": -118.28722
+                    }
+                },
+                {
+                    "id": 36935489,
+                    "displayName": "Hector, Droog, Jesse Calosso, Harvard Bass, and 1 more… at Sound Nightclub (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36935489-hector-at-sound-nightclub?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.002082,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70278269,
+                            "displayName": "Hector",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 164452,
+                                "displayName": "Hector",
+                                "uri": "http://www.songkick.com/artists/164452-hector?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "c7c19398-f083-4f31-a1c8-966ed9b177f5",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:c7c19398-f083-4f31-a1c8-966ed9b177f5.json"
+                                    },
+                                    {
+                                        "mbid": "600bec42-17d9-432b-949c-9ec362b13348",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:600bec42-17d9-432b-949c-9ec362b13348.json"
+                                    },
+                                    {
+                                        "mbid": "c385b87b-ba41-418b-b39d-135267bf0671",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:c385b87b-ba41-418b-b39d-135267bf0671.json"
+                                    },
+                                    {
+                                        "mbid": "6df10562-4438-464d-ba61-4f0ab92b2b08",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:6df10562-4438-464d-ba61-4f0ab92b2b08.json"
+                                    },
+                                    {
+                                        "mbid": "595b8113-3fea-46de-bfb9-5e3ce3e5fd16",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:595b8113-3fea-46de-bfb9-5e3ce3e5fd16.json"
+                                    },
+                                    {
+                                        "mbid": "6fff2845-ee50-419f-9d97-f7efbca736a3",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:6fff2845-ee50-419f-9d97-f7efbca736a3.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70278274,
+                            "displayName": "Droog",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 31501,
+                                "displayName": "Droog",
+                                "uri": "http://www.songkick.com/artists/31501-droog?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "676bb16b-2544-4449-9052-78be4a892c40",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:676bb16b-2544-4449-9052-78be4a892c40.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70278279,
+                            "displayName": "Jesse Calosso",
+                            "billing": "headline",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 8502838,
+                                "displayName": "Jesse Calosso",
+                                "uri": "http://www.songkick.com/artists/8502838-jesse-calosso?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70278284,
+                            "displayName": "Harvard Bass",
+                            "billing": "headline",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 2632256,
+                                "displayName": "Harvard Bass",
+                                "uri": "http://www.songkick.com/artists/2632256-harvard-bass?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "90c27b55-f1eb-47fc-986d-a6744c8a8441",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:90c27b55-f1eb-47fc-986d-a6744c8a8441.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70278289,
+                            "displayName": "Kenny Larkin",
+                            "billing": "headline",
+                            "billingIndex": 5,
+                            "artist": {
+                                "id": 4102,
+                                "displayName": "Kenny Larkin",
+                                "uri": "http://www.songkick.com/artists/4102-kenny-larkin?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "ed8e364a-6087-4425-bd58-6b146893c4b4",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:ed8e364a-6087-4425-bd58-6b146893c4b4.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": "21",
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 207568,
+                        "displayName": "Sound Nightclub",
+                        "uri": "http://www.songkick.com/venues/207568-sound-nightclub?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.101,
+                        "lng": -118.33578
+                    },
+                    "location": {
+                        "city": "Hollywood, CA, US",
+                        "lat": 34.101,
+                        "lng": -118.33578
+                    }
+                },
+                {
+                    "id": 36950204,
+                    "displayName": "Tate at Bootleg Theater (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36950204-tate-at-bootleg-theater?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000254,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:30:00-0800",
+                        "time": "20:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70303694,
+                            "displayName": "Tate",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 76603,
+                                "displayName": "Tate",
+                                "uri": "http://www.songkick.com/artists/76603-tate?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "46508981-8dc6-4d32-b3a8-60d8b2ca85bb",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:46508981-8dc6-4d32-b3a8-60d8b2ca85bb.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 74901,
+                        "displayName": "Bootleg Theater",
+                        "uri": "http://www.songkick.com/venues/74901-bootleg-theater?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.06735,
+                        "lng": -118.27217
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.06735,
+                        "lng": -118.27217
+                    }
+                },
+                {
+                    "id": 36955044,
+                    "displayName": "Joshua Bell at Cerritos Center (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36955044-joshua-bell-at-cerritos-center?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.007422,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:30:00-0800",
+                        "time": "19:30:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70312384,
+                            "displayName": "Joshua Bell",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 43917,
+                                "displayName": "Joshua Bell",
+                                "uri": "http://www.songkick.com/artists/43917-joshua-bell?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "9b248b09-a736-4591-bdce-9dccb8391cc4",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:9b248b09-a736-4591-bdce-9dccb8391cc4.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 4013099,
+                        "displayName": "Cerritos Center",
+                        "uri": "http://www.songkick.com/venues/4013099-cerritos-center?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.87246,
+                        "lng": -118.05959
+                    },
+                    "location": {
+                        "city": "Cerritos, CA, US",
+                        "lat": 33.87246,
+                        "lng": -118.05959
+                    }
+                },
+                {
+                    "id": 36970404,
+                    "displayName": "DannnyRose at Original Mike's (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36970404-dannnyrose-at-original-mikes?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T09:00:00-0800",
+                        "time": "09:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70336914,
+                            "displayName": "DannnyRose",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9847184,
+                                "displayName": "DannnyRose",
+                                "uri": "http://www.songkick.com/artists/9847184-dannnyrose?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": "18+",
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 564211,
+                        "displayName": "Original Mike's",
+                        "uri": "http://www.songkick.com/venues/564211-original-mikes?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.74523,
+                        "lng": -117.86777
+                    },
+                    "location": {
+                        "city": "Santa Ana, CA, US",
+                        "lat": 33.74523,
+                        "lng": -117.86777
+                    }
+                },
+                {
+                    "id": 36971574,
+                    "displayName": "Clark Chimp, Tim Almeida, Jake Long, and The Scared Crows at The Other Door (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36971574-clark-chimp-at-other-door?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000003,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 70339014,
+                            "displayName": "Clark Chimp",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 5732104,
+                                "displayName": "Clark Chimp",
+                                "uri": "http://www.songkick.com/artists/5732104-clark-chimp?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70339019,
+                            "displayName": "Tim Almeida",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9847444,
+                                "displayName": "Tim Almeida",
+                                "uri": "http://www.songkick.com/artists/9847444-tim-almeida?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70339024,
+                            "displayName": "Jake Long",
+                            "billing": "headline",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 9040379,
+                                "displayName": "Jake Long",
+                                "uri": "http://www.songkick.com/artists/9040379-jake-long?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70339029,
+                            "displayName": "The Scared Crows",
+                            "billing": "headline",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 9639509,
+                                "displayName": "The Scared Crows",
+                                "uri": "http://www.songkick.com/artists/9639509-scared-crows?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1583928,
+                        "displayName": "The Other Door",
+                        "uri": "http://www.songkick.com/venues/1583928-other-door?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.17244,
+                        "lng": -118.35915
+                    },
+                    "location": {
+                        "city": "North Hollywood, CA, US",
+                        "lat": 34.17244,
+                        "lng": -118.35915
+                    }
+                },
+                {
+                    "id": 36994159,
+                    "displayName": "Shark Toys with SPVD and Grave Zone at The Hi Hat (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/36994159-shark-toys-at-hi-hat?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000094,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70378024,
+                            "displayName": "Shark Toys",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 2384506,
+                                "displayName": "Shark Toys",
+                                "uri": "http://www.songkick.com/artists/2384506-shark-toys?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "c50e40a5-d215-4138-8933-2fbc29b37c54",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:c50e40a5-d215-4138-8933-2fbc29b37c54.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70378029,
+                            "displayName": "SPVD",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9718689,
+                                "displayName": "SPVD",
+                                "uri": "http://www.songkick.com/artists/9718689-spvd?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70378034,
+                            "displayName": "Grave Zone",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 9469859,
+                                "displayName": "Grave Zone",
+                                "uri": "http://www.songkick.com/artists/9469859-grave-zone?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3200153,
+                        "displayName": "The Hi Hat",
+                        "uri": "http://www.songkick.com/venues/3200153-hi-hat?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.12146,
+                        "lng": -118.20539
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.12146,
+                        "lng": -118.20539
+                    }
+                },
+                {
+                    "id": 37005254,
+                    "displayName": "Funk Fiction, Gerard Marino, and Chris Logsdon at A Simple Bar (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37005254-funk-fiction-at-a-simple-bar?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000008,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70399374,
+                            "displayName": "Funk Fiction",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9775949,
+                                "displayName": "Funk Fiction",
+                                "uri": "http://www.songkick.com/artists/9775949-funk-fiction?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70399379,
+                            "displayName": "Gerard Marino",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9776094,
+                                "displayName": "Gerard Marino",
+                                "uri": "http://www.songkick.com/artists/9776094-gerard-marino?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70399384,
+                            "displayName": "Chris Logsdon",
+                            "billing": "headline",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 583620,
+                                "displayName": "Chris Logsdon",
+                                "uri": "http://www.songkick.com/artists/583620-chris-logsdon?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": "21+",
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3475134,
+                        "displayName": "A Simple Bar",
+                        "uri": "http://www.songkick.com/venues/3475134-a-simple-bar?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.12998,
+                        "lng": -118.34879
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.12998,
+                        "lng": -118.34879
+                    }
+                },
+                {
+                    "id": 37009974,
+                    "displayName": "Oren Pine and The Final Girls at Silverlake Lounge (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37009974-oren-pine-at-silverlake-lounge?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000002,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70407039,
+                            "displayName": "Oren Pine",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9487559,
+                                "displayName": "Oren Pine",
+                                "uri": "http://www.songkick.com/artists/9487559-oren-pine?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 70407044,
+                            "displayName": "The Final Girls",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 9413834,
+                                "displayName": "The Final Girls",
+                                "uri": "http://www.songkick.com/artists/9413834-final-girls?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 31251,
+                        "displayName": "Silverlake Lounge",
+                        "uri": "http://www.songkick.com/venues/31251-silverlake-lounge?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.08259,
+                        "lng": -118.27284
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.08259,
+                        "lng": -118.27284
+                    }
+                },
+                {
+                    "id": 37035989,
+                    "displayName": "Matt Allenn at Marty's on Newport (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37035989-matt-allenn-at-martys-on-newport?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000003,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T21:00:00-0800",
+                        "time": "21:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70448369,
+                            "displayName": "Matt Allenn",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9818659,
+                                "displayName": "Matt Allenn",
+                                "uri": "http://www.songkick.com/artists/9818659-matt-allenn?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 3859519,
+                        "displayName": "Marty's on Newport",
+                        "uri": "http://www.songkick.com/venues/3859519-martys-on-newport?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 33.73374,
+                        "lng": -117.82765
+                    },
+                    "location": {
+                        "city": "Tustin, CA, US",
+                        "lat": 33.73374,
+                        "lng": -117.82765
+                    }
+                },
+                {
+                    "id": 37052019,
+                    "displayName": "Gino D at The Lexington (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37052019-gino-d-at-lexington?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T10:00:00-0800",
+                        "time": "10:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70476619,
+                            "displayName": "Gino D",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9855854,
+                                "displayName": "Gino D",
+                                "uri": "http://www.songkick.com/artists/9855854-gino-d?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": "21+",
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 2386674,
+                        "displayName": "The Lexington",
+                        "uri": "http://www.songkick.com/venues/2386674-lexington?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04895,
+                        "lng": -118.24506
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04895,
+                        "lng": -118.24506
+                    }
+                },
+                {
+                    "id": 37052594,
+                    "displayName": "Flight of Voices at Flight of Voices (Salt Room) (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37052594-flight-of-voices-at-flight-of-voices?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 70477474,
+                            "displayName": "Flight of Voices",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9855899,
+                                "displayName": "Flight of Voices",
+                                "uri": "http://www.songkick.com/artists/9855899-flight-of-voices?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 4056399,
+                        "displayName": "Flight of Voices (Salt Room)",
+                        "uri": "http://www.songkick.com/venues/4056399-flight-of-voices?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": null,
+                        "lng": null
+                    },
+                    "location": {
+                        "city": "Beverly Hills, CA, US",
+                        "lat": 34.0731,
+                        "lng": -118.399
+                    }
+                },
+                {
+                    "id": 37074489,
+                    "displayName": "Inara George with Ben Jaffe at The Standard Hotel - West Hollywood (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37074489-inara-george-at-standard-hotel-west-hollywood?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.005727,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T07:00:00-0800",
+                        "time": "07:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70515069,
+                            "displayName": "Inara George",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 235620,
+                                "displayName": "Inara George",
+                                "uri": "http://www.songkick.com/artists/235620-inara-george?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "42d2d6bd-e942-4e75-a8ca-b54c61be90ba",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:42d2d6bd-e942-4e75-a8ca-b54c61be90ba.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70515074,
+                            "displayName": "Ben Jaffe",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 5214303,
+                                "displayName": "Ben Jaffe",
+                                "uri": "http://www.songkick.com/artists/5214303-ben-jaffe?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "6a849bbc-e2cc-422d-95ca-d3230d802a47",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:6a849bbc-e2cc-422d-95ca-d3230d802a47.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 84531,
+                        "displayName": "The Standard Hotel - West Hollywood",
+                        "uri": "http://www.songkick.com/venues/84531-standard-hotel-west-hollywood?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.09604,
+                        "lng": -118.37087
+                    },
+                    "location": {
+                        "city": "West Hollywood, CA, US",
+                        "lat": 34.09604,
+                        "lng": -118.37087
+                    }
+                },
+                {
+                    "id": 37076254,
+                    "displayName": "Justine Bennett, Jamie Drake, and The Fruit Flies at Stories Books & Cafe (February 6, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/37076254-justine-bennett-at-stories-books-and-cafe?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000137,
+                    "start": {
+                        "date": "2019-02-06",
+                        "datetime": "2019-02-06T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 70518194,
+                            "displayName": "Justine Bennett",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 1108986,
+                                "displayName": "Justine Bennett",
+                                "uri": "http://www.songkick.com/artists/1108986-justine-bennett?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "d417e7cc-2654-4517-bbed-4593783fa7fb",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:d417e7cc-2654-4517-bbed-4593783fa7fb.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70518199,
+                            "displayName": "Jamie Drake",
+                            "billing": "headline",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 891459,
+                                "displayName": "Jamie Drake",
+                                "uri": "http://www.songkick.com/artists/891459-jamie-drake?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "5c73a963-cc95-4c8b-869c-e0d0d8fb70c9",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:5c73a963-cc95-4c8b-869c-e0d0d8fb70c9.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70518204,
+                            "displayName": "The Fruit Flies",
+                            "billing": "headline",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 5841979,
+                                "displayName": "The Fruit Flies",
+                                "uri": "http://www.songkick.com/artists/5841979-fruit-flies?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 974286,
+                        "displayName": "Stories Books & Cafe",
+                        "uri": "http://www.songkick.com/venues/974286-stories-books-and-cafe?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.07732,
+                        "lng": -118.25908
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.07732,
+                        "lng": -118.25908
+                    }
+                },
+                {
+                    "id": 34947469,
+                    "displayName": "Tomorrows Bad Seeds with Nattali Rize at Discovery Ventura (February 7, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/34947469-tomorrows-bad-seeds-at-discovery-ventura?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.004906,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": "2019-02-07T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 67610289,
+                            "displayName": "Tomorrows Bad Seeds",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 588819,
+                                "displayName": "Tomorrows Bad Seeds",
+                                "uri": "http://www.songkick.com/artists/588819-tomorrows-bad-seeds?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "7feb02f2-51fa-422d-838e-2c14ecb4c7b8",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:7feb02f2-51fa-422d-838e-2c14ecb4c7b8.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 69702269,
+                            "displayName": "Nattali Rize",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 8923134,
+                                "displayName": "Nattali Rize",
+                                "uri": "http://www.songkick.com/artists/8923134-nattali-rize?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "e7e6aa4f-2238-41bc-9bb2-f9cb26189902",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:e7e6aa4f-2238-41bc-9bb2-f9cb26189902.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 2676128,
+                        "displayName": "Discovery Ventura",
+                        "uri": "http://www.songkick.com/venues/2676128-discovery-ventura?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.2746,
+                        "lng": -119.27308
+                    },
+                    "location": {
+                        "city": "Ventura, CA, US",
+                        "lat": 34.2746,
+                        "lng": -119.27308
+                    }
+                },
+                {
+                    "id": 35080084,
+                    "displayName": "Los Angeles Philharmonic at Walt Disney Concert Hall (February 7, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35080084-los-angeles-philharmonic-at-walt-disney-concert-hall?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.002588,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": "2019-02-07T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 67199294,
+                            "displayName": "Los Angeles Philharmonic",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 461937,
+                                "displayName": "Los Angeles Philharmonic",
+                                "uri": "http://www.songkick.com/artists/461937-los-angeles-philharmonic?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "98e4313e-dfb0-4084-805c-3e42ef9301d0",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:98e4313e-dfb0-4084-805c-3e42ef9301d0.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 485,
+                        "displayName": "Walt Disney Concert Hall",
+                        "uri": "http://www.songkick.com/venues/485-walt-disney-concert-hall?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.05505,
+                        "lng": -118.24933
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.05505,
+                        "lng": -118.24933
+                    }
+                },
+                {
+                    "id": 35282539,
+                    "displayName": "A Bowie Celebration at Orpheum Theatre (February 7, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35282539-a-bowie-celebration-at-orpheum-theatre?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.000034,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": "2019-02-07T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 67545929,
+                            "displayName": "A Bowie Celebration",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 9535549,
+                                "displayName": "A Bowie Celebration",
+                                "uri": "http://www.songkick.com/artists/9535549-a-bowie-celebration?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "3f8eee76-dca5-4ba8-a74e-6a3155e709f9",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:3f8eee76-dca5-4ba8-a74e-6a3155e709f9.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 1262,
+                        "displayName": "Orpheum Theatre",
+                        "uri": "http://www.songkick.com/venues/1262-orpheum-theatre?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04267,
+                        "lng": -118.25553
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04267,
+                        "lng": -118.25553
+                    }
+                },
+                {
+                    "id": 35313639,
+                    "displayName": "The Smithereens at Canyon Club (February 7, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35313639-smithereens-at-canyon-club?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.009365,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": "2019-02-07T21:00:00-0800",
+                        "time": "21:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 67599734,
+                            "displayName": "The Smithereens",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 122638,
+                                "displayName": "The Smithereens",
+                                "uri": "http://www.songkick.com/artists/122638-smithereens?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "fae2cd4c-f847-4cb3-b311-60c8906cdb0b",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:fae2cd4c-f847-4cb3-b311-60c8906cdb0b.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 30102,
+                        "displayName": "Canyon Club",
+                        "uri": "http://www.songkick.com/venues/30102-canyon-club?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.14403,
+                        "lng": -118.75487
+                    },
+                    "location": {
+                        "city": "Agoura Hills, CA, US",
+                        "lat": 34.14403,
+                        "lng": -118.75487
+                    }
+                },
+                {
+                    "id": 35684699,
+                    "displayName": "Roots of Creation at Regent Theater (February 7, 2019) (CANCELLED) ",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35684699-roots-of-creation-at-regent-theater?utm_source=55002&utm_medium=partner",
+                    "status": "cancelled",
+                    "popularity": 0.000569,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": "2019-02-07T20:00:00-0800",
+                        "time": "20:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 68223054,
+                            "displayName": "Roots of Creation",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 594157,
+                                "displayName": "Roots of Creation",
+                                "uri": "http://www.songkick.com/artists/594157-roots-of-creation?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "b5f9d72a-5378-4c74-8b23-b64ad0f7d666",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:b5f9d72a-5378-4c74-8b23-b64ad0f7d666.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 36035,
+                        "displayName": "Regent Theater",
+                        "uri": "http://www.songkick.com/venues/36035-regent-theater?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04698,
+                        "lng": -118.2478
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04698,
+                        "lng": -118.2478
+                    }
+                },
+                {
+                    "id": 35694169,
+                    "displayName": "Atmosphere with deM atlaS, The Lioness (MN), and DJ Keezy at The Novo by Microsoft (February 7, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35694169-atmosphere-at-novo-by-microsoft?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.08595,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": null,
+                        "time": null
+                    },
+                    "performance": [
+                        {
+                            "id": 68238454,
+                            "displayName": "Atmosphere",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 44331,
+                                "displayName": "Atmosphere",
+                                "uri": "http://www.songkick.com/artists/44331-atmosphere?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "ef954679-5ee7-4016-acef-7ac71f2fa3d8",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:ef954679-5ee7-4016-acef-7ac71f2fa3d8.json"
+                                    },
+                                    {
+                                        "mbid": "df9d02bb-d4de-4440-b977-9019f23fd7cb",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:df9d02bb-d4de-4440-b977-9019f23fd7cb.json"
+                                    },
+                                    {
+                                        "mbid": "516b6232-eaa0-4f03-a0c5-66350ee988b1",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:516b6232-eaa0-4f03-a0c5-66350ee988b1.json"
+                                    },
+                                    {
+                                        "mbid": "44c7bce3-da01-4dc0-b0a5-1eb9b160f049",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:44c7bce3-da01-4dc0-b0a5-1eb9b160f049.json"
+                                    },
+                                    {
+                                        "mbid": "ac32879a-de4a-40a5-bea9-59d5b0e3e540",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:ac32879a-de4a-40a5-bea9-59d5b0e3e540.json"
+                                    },
+                                    {
+                                        "mbid": "f77ff758-01ca-4fa5-acf8-cd741f986d1c",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:f77ff758-01ca-4fa5-acf8-cd741f986d1c.json"
+                                    },
+                                    {
+                                        "mbid": "1796f3b3-619a-4e00-ae0d-0960df2af58a",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:1796f3b3-619a-4e00-ae0d-0960df2af58a.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68238459,
+                            "displayName": "deM atlaS",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 4570708,
+                                "displayName": "deM atlaS",
+                                "uri": "http://www.songkick.com/artists/4570708-dem-atlas?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "8bc2eaa3-dbd3-4c3b-a6ce-82bc66f28bcc",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:8bc2eaa3-dbd3-4c3b-a6ce-82bc66f28bcc.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 68238464,
+                            "displayName": "The Lioness (MN)",
+                            "billing": "support",
+                            "billingIndex": 3,
+                            "artist": {
+                                "id": 8972129,
+                                "displayName": "The Lioness (MN)",
+                                "uri": "http://www.songkick.com/artists/8972129-lioness-mn?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        },
+                        {
+                            "id": 68238469,
+                            "displayName": "DJ Keezy",
+                            "billing": "support",
+                            "billingIndex": 4,
+                            "artist": {
+                                "id": 7565919,
+                                "displayName": "DJ Keezy",
+                                "uri": "http://www.songkick.com/artists/7565919-dj-keezy?utm_source=55002&utm_medium=partner",
+                                "identifier": []
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 2871953,
+                        "displayName": "The Novo by Microsoft",
+                        "uri": "http://www.songkick.com/venues/2871953-novo-by-microsoft?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.04494,
+                        "lng": -118.2655
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.04494,
+                        "lng": -118.2655
+                    }
+                },
+                {
+                    "id": 35719724,
+                    "displayName": "MØ with LPX at The Wiltern (February 7, 2019)",
+                    "type": "Concert",
+                    "uri": "http://www.songkick.com/concerts/35719724-mo-at-wiltern?utm_source=55002&utm_medium=partner",
+                    "status": "ok",
+                    "popularity": 0.166064,
+                    "start": {
+                        "date": "2019-02-07",
+                        "datetime": "2019-02-07T19:00:00-0800",
+                        "time": "19:00:00"
+                    },
+                    "performance": [
+                        {
+                            "id": 68280829,
+                            "displayName": "MØ",
+                            "billing": "headline",
+                            "billingIndex": 1,
+                            "artist": {
+                                "id": 139369,
+                                "displayName": "MØ",
+                                "uri": "http://www.songkick.com/artists/139369-mo?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "c8de971d-a166-4bce-97ab-1f7d72197713",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:c8de971d-a166-4bce-97ab-1f7d72197713.json"
+                                    },
+                                    {
+                                        "mbid": "1436ede9-051e-4a91-b9b7-7546dc3578a1",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:1436ede9-051e-4a91-b9b7-7546dc3578a1.json"
+                                    },
+                                    {
+                                        "mbid": "33ccdddf-87eb-4f5d-97a3-85a7b7bb2c00",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:33ccdddf-87eb-4f5d-97a3-85a7b7bb2c00.json"
+                                    },
+                                    {
+                                        "mbid": "be4b1a2c-7322-4656-a359-a6089bfac368",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:be4b1a2c-7322-4656-a359-a6089bfac368.json"
+                                    },
+                                    {
+                                        "mbid": "e6b4482f-29bb-483b-aec5-a2fbad6083d4",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:e6b4482f-29bb-483b-aec5-a2fbad6083d4.json"
+                                    },
+                                    {
+                                        "mbid": "116d2350-894e-40f7-9567-9dbdcdc26bdc",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:116d2350-894e-40f7-9567-9dbdcdc26bdc.json"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 70273139,
+                            "displayName": "LPX",
+                            "billing": "support",
+                            "billingIndex": 2,
+                            "artist": {
+                                "id": 8985579,
+                                "displayName": "LPX",
+                                "uri": "http://www.songkick.com/artists/8985579-lpx?utm_source=55002&utm_medium=partner",
+                                "identifier": [
+                                    {
+                                        "mbid": "4d591d80-9bbc-4a86-87a9-1ddc13c854b6",
+                                        "href": "http://api.songkick.com/api/3.0/artists/mbid:4d591d80-9bbc-4a86-87a9-1ddc13c854b6.json"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ageRestriction": null,
+                    "flaggedAsEnded": false,
+                    "venue": {
+                        "id": 780,
+                        "displayName": "The Wiltern",
+                        "uri": "http://www.songkick.com/venues/780-wiltern?utm_source=55002&utm_medium=partner",
+                        "metroArea": {
+                            "displayName": "Los Angeles",
+                            "country": {
+                                "displayName": "US"
+                            },
+                            "state": {
+                                "displayName": "CA"
+                            },
+                            "id": 17835,
+                            "uri": "http://www.songkick.com/metro_areas/17835-us-los-angeles?utm_source=55002&utm_medium=partner"
+                        },
+                        "lat": 34.06194,
+                        "lng": -118.30884
+                    },
+                    "location": {
+                        "city": "Los Angeles, CA, US",
+                        "lat": 34.06194,
+                        "lng": -118.30884
+                    }
+                }
+            ]
+        },
+        "perPage": 50,
+        "page": 1,
+        "totalEntries": 3768
+    }
+}

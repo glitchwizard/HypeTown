@@ -1,27 +1,93 @@
-<p>
-  home works!
-</p>
-
-<input #location>
-<input type="date" #min> to <input type="date" #max>
-
-<button  (click)="createPerformanceArray(location.value, min.value, max.value)" class="btn btn-danger">Find by date</button>
-<button  (click)="getArtistsFromSpotify()" class="btn btn-warning">Test Spotify Call</button>
 
 
+<div class="container_homeComponent">
+  <div class="container">
+    <div class="banner">
+      LISTEN TO BANDS PLAYING IN YOUR AREA
+    </div>
+  </div>
+  <div class="container form">
+    <div class="location">
+      <input id="location_input" #location value="Los Angeles">
+    </div>
 
-<ul>
-{{(artists|async)?.artists.items.length}}
-  <li *ngFor="let artist of (artists|async)?.artists.items">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
-</ul>
+    <div class="row">
+      <div class="col-lg-6 date">
+        <input class="date_input" type="date" #minDate value="2019-02-07">
+      </div>
+      <div class="col-lg-6 date">
+        <input class="date_input" type="date" #maxDate value="2019-02-07">
+      </div>
+    </div>
+    <div id="findMusicRow" class="row">
 
-<button  (click)="getIdsFromArtists()" class="btn btn-warning">Test Artist ID Call</button>
+      <button id="search_button" (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" (click)="toggle('results')">Find Music</button>
 
-<ul>
-  <li *ngFor="let id of artistIDs">Artist Name: {{artist.name}}<br>Artist Spotify ID: {{artist.id}}</li>
-</ul>
+    </div>
+  </div>
 
-<div *ngIf="locations">
-  <app-locations-list [childLocations]="locations"> </app-locations-list>
-
+<div class="container results d-flex justify-content-center" [@slideUpandDown]="animationState">
+  <div class="row">
+    <div  class="col-lg-6">
+      <div class="container api-data">
+        <div class="row artist-row"  *ngFor="let artist of showArtists$">
+          <div class="col-lg-3">
+          <p>{{artist}}</p>
+          </div>
+          <div class="col=lg-3">
+            <p>Venue: SWHOOSH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 player">
+          <iframe src="https://open.spotify.com/embed/playlist/3vbpgG3ACgvCrfuUZhGvbC" width="600" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
 </div>
+
+
+
+
+<!--
+
+
+  <div class="results">
+    <div class="forLoop" *ngFor = "let artist of showArtists$">
+    <div class="row">
+
+        <div class="col-md-2 artist-list">
+          <div class="artist-section">
+            <p>{{artist}}</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="venue">
+            <p>Venue: SWHOOSH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <iframe src="https://open.spotify.com/embed/playlist/3vbpgG3ACgvCrfuUZhGvbC" width="600" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div> -->
+
+  <!-- <p></p>
+  CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
+  <p></p>
+  CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
+  <p></p> -->
+
+
+
+<button  (click)="getAllSpotifyArtistObjects()" class="btn btn-warning">Find songs on Spotify from artist list</button>
+
+<ul>
+  <div *ngFor="let artist of spotifyArtistListFromQuery">
+    <li *ngIf="artist.artists.items[0]">
+      {{ artist.artists.items[0].name }}
+      {{ artist.artists.items[0].id }}
+    </li>
+  </div>
+</ul>
