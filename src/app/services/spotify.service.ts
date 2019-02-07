@@ -28,8 +28,9 @@ export class SpotifyService {
         .map((token: Response) => {return token.json()})
     }
 
+ // TODO: This function below needs to be finished.
   findArtistTopTrack(id: string, token: string) {
-      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + str + '&type=artist';
+      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + id + '&type=artist';
       let headers = new Headers();
       headers.append('Authorization', 'Bearer ' + token);
       return this._http.get(this.searchUrl, { headers: headers })
