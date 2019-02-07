@@ -92,9 +92,8 @@ export class HomeComponent {
                })
       );
   }
-
-// TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop.
-  getAllSpotifyArtistObjects() { // populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
+// Populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
+  getAllSpotifyArtistObjects() { 
     const APICallArray = [];
     // const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
     const ArtistOutputArray = [];
