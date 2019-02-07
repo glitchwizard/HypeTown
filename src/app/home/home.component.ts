@@ -29,7 +29,6 @@ export class HomeComponent {
   public artistToQuery: string;
   public spotifyArtistListFromQuery: string[] = [];
   public artistIdListFromSpotify: string[] = [];
-
   animationState="out";
 
 
@@ -61,7 +60,7 @@ export class HomeComponent {
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
-  
+
     console.log('generateArrayOfHeadlinerPerformances() running...');
     this.showLocationQuery = location;
     this.showMinDate = minDate;

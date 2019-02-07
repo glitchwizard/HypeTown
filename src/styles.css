@@ -93,11 +93,8 @@
   text-shadow: 0px 2px 25px white;
 }
 .content {
-
-  /* left: 21%; */
-  /* right: 05%; */
-  /* position: relative; */
+  position: relative;
   z-index: 5;
-  /* bottom: 600px; */
+  bottom: 600px;
 
 }
