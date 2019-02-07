@@ -24,7 +24,7 @@ export class HomeComponent {
   public showMinDate: string;
   public artistList: string[] = [];
   public artistToQuery: string;
-  public spotifyArtistListFromQuery: string[] = [];
+  public spotifyArtistListFromQuery = [];
   public artistIdListFromSpotify: string[] = [];
   public newProperty: string[] = [];
 
@@ -83,10 +83,11 @@ export class HomeComponent {
   }
 
 // TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop.
-  getAllSpotifyArtistIds() { // populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
+  getAllSpotifyArtistObjects() { // populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
     const APICallArray = [];
     const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
     const ArtistOutputArray = [];
+
     for (let i = 0; i < dummyArtistList.length; i++) {
       this.artistToQuery = dummyArtistList[i];
       APICallArray.push(this.generateArtistIdFromArtist(dummyArtistList[i]));
@@ -96,13 +97,10 @@ export class HomeComponent {
         APICallArray[i].subscribe((response) => {
           console.log(response);
           ArtistOutputArray.push(response);
-          this.artistIdListFromSpotify.push(response.artists.items[0]);
         });
     }
-
-    console.log('ArtistOutputArray');
+    this.spotifyArtistListFromQuery = ArtistOutputArray;
     console.log(ArtistOutputArray);
-    console.log('this.artistIdListFromSpotify');
-    console.log(this.artistIdListFromSpotify);
+    return ArtistOutputArray;
   }
 }
