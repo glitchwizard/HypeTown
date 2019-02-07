@@ -1,0 +1,844 @@
+{
+  "tracks": [
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/358hXrWXW1WXjqiA6NtaEl"
+        },
+        "href": "https://api.spotify.com/v1/albums/358hXrWXW1WXjqiA6NtaEl",
+        "id": "358hXrWXW1WXjqiA6NtaEl",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/83fe1b7a40866ee9f7315afc6bfc5a96b8ed2d73",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/9d144a4d59180324d56375cf1c3221fb08293453",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e39f69bed72b8e1406a3e6a951bcfd4e30fcd138",
+            "width": 64
+          }
+        ],
+        "name": "Lost Station",
+        "release_date": "2016-02-10",
+        "release_date_precision": "day",
+        "total_tracks": 4,
+        "type": "album",
+        "uri": "spotify:album:358hXrWXW1WXjqiA6NtaEl"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 174803,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QM42K1502850"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6BGbt6NGG5LGGqKdwAzzS8"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6BGbt6NGG5LGGqKdwAzzS8",
+      "id": "6BGbt6NGG5LGGqKdwAzzS8",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Perfume!",
+      "popularity": 51,
+      "preview_url": "https://p.scdn.co/mp3-preview/ba21a2e1d105f516906e6136c44f0093b0130496?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:6BGbt6NGG5LGGqKdwAzzS8"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
+            },
+            "href": "https://api.spotify.com/v1/artists/7cvljqLNhWNFMb8wP2NImJ",
+            "id": "7cvljqLNhWNFMb8wP2NImJ",
+            "name": "Moe Shop",
+            "type": "artist",
+            "uri": "spotify:artist:7cvljqLNhWNFMb8wP2NImJ"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/68skHSco1kLClDJQjByRWj"
+        },
+        "href": "https://api.spotify.com/v1/albums/68skHSco1kLClDJQjByRWj",
+        "id": "68skHSco1kLClDJQjByRWj",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/35e34e384329dcb63a97ac4d160b81417884991e",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/4b57de23c64163cf7a6a1d7ec2335edf49510f0f",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/7cbde798330694e4ebbc154cd2cb2724c9bd2515",
+            "width": 64
+          }
+        ],
+        "name": "Blush (Moe Shop Remix)",
+        "release_date": "2017-07-27",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:68skHSco1kLClDJQjByRWj"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4o66UJPzUonUgENhbqpHRX"
+          },
+          "href": "https://api.spotify.com/v1/artists/4o66UJPzUonUgENhbqpHRX",
+          "id": "4o66UJPzUonUgENhbqpHRX",
+          "name": "MYLK",
+          "type": "artist",
+          "uri": "spotify:artist:4o66UJPzUonUgENhbqpHRX"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7cvljqLNhWNFMb8wP2NImJ"
+          },
+          "href": "https://api.spotify.com/v1/artists/7cvljqLNhWNFMb8wP2NImJ",
+          "id": "7cvljqLNhWNFMb8wP2NImJ",
+          "name": "Moe Shop",
+          "type": "artist",
+          "uri": "spotify:artist:7cvljqLNhWNFMb8wP2NImJ"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 180482,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "UST8K1798597"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7jBCew4aY5YL9xN25zyUq8"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7jBCew4aY5YL9xN25zyUq8",
+      "id": "7jBCew4aY5YL9xN25zyUq8",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Blush - Moe Shop Remix",
+      "popularity": 45,
+      "preview_url": "https://p.scdn.co/mp3-preview/323a7b3e1529a840320fe7ddf430d717b8c2452c?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:7jBCew4aY5YL9xN25zyUq8"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/358hXrWXW1WXjqiA6NtaEl"
+        },
+        "href": "https://api.spotify.com/v1/albums/358hXrWXW1WXjqiA6NtaEl",
+        "id": "358hXrWXW1WXjqiA6NtaEl",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/83fe1b7a40866ee9f7315afc6bfc5a96b8ed2d73",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/9d144a4d59180324d56375cf1c3221fb08293453",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e39f69bed72b8e1406a3e6a951bcfd4e30fcd138",
+            "width": 64
+          }
+        ],
+        "name": "Lost Station",
+        "release_date": "2016-02-10",
+        "release_date_precision": "day",
+        "total_tracks": 4,
+        "type": "album",
+        "uri": "spotify:album:358hXrWXW1WXjqiA6NtaEl"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 148771,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QM42K1503137"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/0PimqJTXOVDgTI5e79wAYb"
+      },
+      "href": "https://api.spotify.com/v1/tracks/0PimqJTXOVDgTI5e79wAYb",
+      "id": "0PimqJTXOVDgTI5e79wAYb",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Cutie Cutie",
+      "popularity": 45,
+      "preview_url": "https://p.scdn.co/mp3-preview/abdaf1c94700e7420e4a7ffd2172e78342dac07e?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:0PimqJTXOVDgTI5e79wAYb"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0iP1O0iLhtZD8bSEVAlfp0"
+        },
+        "href": "https://api.spotify.com/v1/albums/0iP1O0iLhtZD8bSEVAlfp0",
+        "id": "0iP1O0iLhtZD8bSEVAlfp0",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/42535e41baa023527a58d8ce37725ba93435e061",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/1d88e1180e34e038d478dbaa2e39a37d7f4c2135",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/3bb1fa379c8140b14402f72ebd5279c6a941a07a",
+            "width": 64
+          }
+        ],
+        "name": "Like You!",
+        "release_date": "2018-09-05",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "type": "album",
+        "uri": "spotify:album:0iP1O0iLhtZD8bSEVAlfp0"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 238048,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QMPKX1830360"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2c4Lt7zofjIUmn9SAeJPbR"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2c4Lt7zofjIUmn9SAeJPbR",
+      "id": "2c4Lt7zofjIUmn9SAeJPbR",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Like You!",
+      "popularity": 42,
+      "preview_url": "https://p.scdn.co/mp3-preview/5f619def301d6c3bb49e3040b1ad84b84464ed30?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:2c4Lt7zofjIUmn9SAeJPbR"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0oppzlIYZu2rH4Y4MbZ8C4"
+        },
+        "href": "https://api.spotify.com/v1/albums/0oppzlIYZu2rH4Y4MbZ8C4",
+        "id": "0oppzlIYZu2rH4Y4MbZ8C4",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/3124d155b02eedf71306916ea496c9763317bea2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b46e2a7e88a00e146f4a502c5170c2dd54829e07",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e050033879edc8c252c1abf2f59242aa389dadc8",
+            "width": 64
+          }
+        ],
+        "name": "Polarity",
+        "release_date": "2017-06-16",
+        "release_date_precision": "day",
+        "total_tracks": 6,
+        "type": "album",
+        "uri": "spotify:album:0oppzlIYZu2rH4Y4MbZ8C4"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 185365,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QM2PV1769452"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/08pstzxhM7jK8AqFFbJhQL"
+      },
+      "href": "https://api.spotify.com/v1/tracks/08pstzxhM7jK8AqFFbJhQL",
+      "id": "08pstzxhM7jK8AqFFbJhQL",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Gateway",
+      "popularity": 37,
+      "preview_url": "https://p.scdn.co/mp3-preview/8dd79d66243e7a7e12b696195f5e5738dcfbddfc?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:08pstzxhM7jK8AqFFbJhQL"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0oppzlIYZu2rH4Y4MbZ8C4"
+        },
+        "href": "https://api.spotify.com/v1/albums/0oppzlIYZu2rH4Y4MbZ8C4",
+        "id": "0oppzlIYZu2rH4Y4MbZ8C4",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/3124d155b02eedf71306916ea496c9763317bea2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b46e2a7e88a00e146f4a502c5170c2dd54829e07",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e050033879edc8c252c1abf2f59242aa389dadc8",
+            "width": 64
+          }
+        ],
+        "name": "Polarity",
+        "release_date": "2017-06-16",
+        "release_date_precision": "day",
+        "total_tracks": 6,
+        "type": "album",
+        "uri": "spotify:album:0oppzlIYZu2rH4Y4MbZ8C4"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4o66UJPzUonUgENhbqpHRX"
+          },
+          "href": "https://api.spotify.com/v1/artists/4o66UJPzUonUgENhbqpHRX",
+          "id": "4o66UJPzUonUgENhbqpHRX",
+          "name": "MYLK",
+          "type": "artist",
+          "uri": "spotify:artist:4o66UJPzUonUgENhbqpHRX"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 326590,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QM2PV1769450"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3LQ6ggnDfhFG3cRDMpVPli"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3LQ6ggnDfhFG3cRDMpVPli",
+      "id": "3LQ6ggnDfhFG3cRDMpVPli",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Inner",
+      "popularity": 37,
+      "preview_url": "https://p.scdn.co/mp3-preview/35bc703a6f1dd6d43de83c31104a94d205ddbded?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:3LQ6ggnDfhFG3cRDMpVPli"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/358hXrWXW1WXjqiA6NtaEl"
+        },
+        "href": "https://api.spotify.com/v1/albums/358hXrWXW1WXjqiA6NtaEl",
+        "id": "358hXrWXW1WXjqiA6NtaEl",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/83fe1b7a40866ee9f7315afc6bfc5a96b8ed2d73",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/9d144a4d59180324d56375cf1c3221fb08293453",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e39f69bed72b8e1406a3e6a951bcfd4e30fcd138",
+            "width": 64
+          }
+        ],
+        "name": "Lost Station",
+        "release_date": "2016-02-10",
+        "release_date_precision": "day",
+        "total_tracks": 4,
+        "type": "album",
+        "uri": "spotify:album:358hXrWXW1WXjqiA6NtaEl"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 144000,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "FR26V1603115"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/07RPEOwBOCHQcyEbV0uYxL"
+      },
+      "href": "https://api.spotify.com/v1/tracks/07RPEOwBOCHQcyEbV0uYxL",
+      "id": "07RPEOwBOCHQcyEbV0uYxL",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Suiito",
+      "popularity": 33,
+      "preview_url": "https://p.scdn.co/mp3-preview/9bff6ee66f91bf7994733b6ca7e3f8ff1a1c6c91?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:07RPEOwBOCHQcyEbV0uYxL"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+            },
+            "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+            "id": "0LyfQWJT6nXafLPZqxe9Of",
+            "name": "Various Artists",
+            "type": "artist",
+            "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2LPv3jSJ3eBRf1NZJmAjP2"
+        },
+        "href": "https://api.spotify.com/v1/albums/2LPv3jSJ3eBRf1NZJmAjP2",
+        "id": "2LPv3jSJ3eBRf1NZJmAjP2",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/41cde6ebd058383de46f149629aff1efdb5e1ac0",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/957a696a6d94e23d6f48dbea6c246a6c818c88af",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/bead1683c484ef2f1dae589de33de10895344a6a",
+            "width": 64
+          }
+        ],
+        "name": "Elsia",
+        "release_date": "2014-08-08",
+        "release_date_precision": "day",
+        "total_tracks": 6,
+        "type": "album",
+        "uri": "spotify:album:2LPv3jSJ3eBRf1NZJmAjP2"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7sL01AsTk5fx02oQja1hE1"
+          },
+          "href": "https://api.spotify.com/v1/artists/7sL01AsTk5fx02oQja1hE1",
+          "id": "7sL01AsTk5fx02oQja1hE1",
+          "name": "Keyboard Kid",
+          "type": "artist",
+          "uri": "spotify:artist:7sL01AsTk5fx02oQja1hE1"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4BrtGOYp8sytG9MV91DROT"
+          },
+          "href": "https://api.spotify.com/v1/artists/4BrtGOYp8sytG9MV91DROT",
+          "id": "4BrtGOYp8sytG9MV91DROT",
+          "name": "Rhodz",
+          "type": "artist",
+          "uri": "spotify:artist:4BrtGOYp8sytG9MV91DROT"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/7CFAN6aNQSP6xMhqlhpXCV"
+          },
+          "href": "https://api.spotify.com/v1/artists/7CFAN6aNQSP6xMhqlhpXCV",
+          "id": "7CFAN6aNQSP6xMhqlhpXCV",
+          "name": "Sian Area",
+          "type": "artist",
+          "uri": "spotify:artist:7CFAN6aNQSP6xMhqlhpXCV"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 280615,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "GBKQU1463950"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6omJxQ9iv6FK8da0qYl01I"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6omJxQ9iv6FK8da0qYl01I",
+      "id": "6omJxQ9iv6FK8da0qYl01I",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Iku - Original Mix",
+      "popularity": 33,
+      "preview_url": "https://p.scdn.co/mp3-preview/ce4b407bf33c521afc01b2cbf30ce9c7963eb87d?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:6omJxQ9iv6FK8da0qYl01I"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0oppzlIYZu2rH4Y4MbZ8C4"
+        },
+        "href": "https://api.spotify.com/v1/albums/0oppzlIYZu2rH4Y4MbZ8C4",
+        "id": "0oppzlIYZu2rH4Y4MbZ8C4",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/3124d155b02eedf71306916ea496c9763317bea2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b46e2a7e88a00e146f4a502c5170c2dd54829e07",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e050033879edc8c252c1abf2f59242aa389dadc8",
+            "width": 64
+          }
+        ],
+        "name": "Polarity",
+        "release_date": "2017-06-16",
+        "release_date_precision": "day",
+        "total_tracks": 6,
+        "type": "album",
+        "uri": "spotify:album:0oppzlIYZu2rH4Y4MbZ8C4"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4o66UJPzUonUgENhbqpHRX"
+          },
+          "href": "https://api.spotify.com/v1/artists/4o66UJPzUonUgENhbqpHRX",
+          "id": "4o66UJPzUonUgENhbqpHRX",
+          "name": "MYLK",
+          "type": "artist",
+          "uri": "spotify:artist:4o66UJPzUonUgENhbqpHRX"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 163937,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QM2PV1769453"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7uyTSsMuJ1Yxail0U2pe5i"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7uyTSsMuJ1Yxail0U2pe5i",
+      "id": "7uyTSsMuJ1Yxail0U2pe5i",
+      "is_local": false,
+      "is_playable": true,
+      "name": "Blush",
+      "popularity": 30,
+      "preview_url": "https://p.scdn.co/mp3-preview/1076affec24ddad5a54c0f1cdac8588b7bdd8316?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 5,
+      "type": "track",
+      "uri": "spotify:track:7uyTSsMuJ1Yxail0U2pe5i"
+    },
+    {
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+            },
+            "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+            "id": "0q0K0FV5t8OnVpbIQTXOhI",
+            "name": "fusq",
+            "type": "artist",
+            "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+          }
+        ],
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0oppzlIYZu2rH4Y4MbZ8C4"
+        },
+        "href": "https://api.spotify.com/v1/albums/0oppzlIYZu2rH4Y4MbZ8C4",
+        "id": "0oppzlIYZu2rH4Y4MbZ8C4",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/3124d155b02eedf71306916ea496c9763317bea2",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/b46e2a7e88a00e146f4a502c5170c2dd54829e07",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/e050033879edc8c252c1abf2f59242aa389dadc8",
+            "width": 64
+          }
+        ],
+        "name": "Polarity",
+        "release_date": "2017-06-16",
+        "release_date_precision": "day",
+        "total_tracks": 6,
+        "type": "album",
+        "uri": "spotify:album:0oppzlIYZu2rH4Y4MbZ8C4"
+      },
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0q0K0FV5t8OnVpbIQTXOhI"
+          },
+          "href": "https://api.spotify.com/v1/artists/0q0K0FV5t8OnVpbIQTXOhI",
+          "id": "0q0K0FV5t8OnVpbIQTXOhI",
+          "name": "fusq",
+          "type": "artist",
+          "uri": "spotify:artist:0q0K0FV5t8OnVpbIQTXOhI"
+        }
+      ],
+      "disc_number": 1,
+      "duration_ms": 110769,
+      "explicit": false,
+      "external_ids": {
+        "isrc": "QM2PV1769449"
+      },
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/2sjOXoO2ik3xhdij2hZIwa"
+      },
+      "href": "https://api.spotify.com/v1/tracks/2sjOXoO2ik3xhdij2hZIwa",
+      "id": "2sjOXoO2ik3xhdij2hZIwa",
+      "is_local": false,
+      "is_playable": true,
+      "name": "When I",
+      "popularity": 29,
+      "preview_url": "https://p.scdn.co/mp3-preview/d57b2d4f264867b0f66c851527f169199029dc24?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:2sjOXoO2ik3xhdij2hZIwa"
+    }
+  ]
+}
