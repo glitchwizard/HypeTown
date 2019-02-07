@@ -5,7 +5,7 @@ import { SpotifyService } from '../services/spotify.service'
 import { Artist } from '../models/artist-model';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
-import { flatMap } from 'rxjs/operators';
+import { flatMap, concat } from 'rxjs/operators';
 
 
 @Component({
@@ -40,7 +40,7 @@ export class HomeComponent {
     });
   }
 
-//This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
+//This function should change to use map instead of subscribe, we use subscribe for troubleshooting to log the outputs
 
   findListOfShowsByCityIdAndDateRange() {
     console.log('findListOfShowsByCityIdAndDateRange() running...');
@@ -74,70 +74,35 @@ export class HomeComponent {
     });
   }
 
-  generateArtistIdFromArtist(dummyVar){
-    return this.spotifyService.getToken().pipe(
-      flatMap((accessTokenResponse) => {
-
-        console.log('generateArtistIdFromArtist() this.artistToQuery');
-        console.log(dummyVar);
-        console.log('------------------');
-
-        return this.spotifyService.searchArtistID(dummyVar, accessTokenResponse.access_token)
-        .map((response) => {
-          response.artists.items.forEach((spotifyArtist) => {
-            this.spotifyArtistListFromQuery.push(spotifyArtist.name);
-          });
-          const artistMatchIndexPosition = this.spotifyArtistListFromQuery.findIndex((artistToQueryNow) => {
-            return artistToQueryNow === dummyVar;
-          });
-          if (artistMatchIndexPosition >= 0 ) {
-             this.artistIdListFromSpotify.push(response.artists.items[artistMatchIndexPosition].id)
-             return response.artists.items[artistMatchIndexPosition].id;
-          }
-        });
-      })
-    );
+  generateArtistIdFromArtist(artistName) {
+      return this.spotifyService.getToken().pipe(
+        flatMap((accessTokenResponse) => {
+          return this.spotifyService.searchArtistID(artistName, accessTokenResponse.access_token);
+               })
+      );
   }
 
-  returnSingleArtistId(artistName) {
-    this.artistToQuery = artistName;
-    this.generateArtistIdFromArtist().subscribe((idResponse) => {
-      return idResponse;
-    });
-  }
-
-// TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop. 
-  getAllSpotifyArtistIds(){
-    let dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
-    this.artistToQuery = 'The Toasters';
-
-    // this.generateArtistIdFromArtist().subscribe((idResponse) => {
-    //
-    // })
-
-   for (let i = 0; i < dummyArtistList.length; i++) {
-      // console.log('dummyArtistList[i]');
-      // console.log(dummyArtistList[i]);
-
+// TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop.
+  getAllSpotifyArtistIds() { // populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
+    const APICallArray = [];
+    const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
+    const ArtistOutputArray = [];
+    for (let i = 0; i < dummyArtistList.length; i++) {
       this.artistToQuery = dummyArtistList[i];
-
-      console.log('this.artistToQuery');
-      console.log(this.artistToQuery);
-      console.log('');
-      setTimeout((dummyVar) => {
-        this.generateArtistIdFromArtist(dummyArtistList[i]).subscribe((response) => {
-          console.log('--^^--');
-          console.log('dummyArtistList[i]--2');
-          console.log(dummyArtistList[i]);
-          console.log('response');
-          console.log(response);
-          console.log('this.artistToQuery');
-          console.log(this.artistToQuery);
-          console.log('--vv--');
-          this.newProperty.push(response);
-      }, 2000);
-      });
-
+      APICallArray.push(this.generateArtistIdFromArtist(dummyArtistList[i]));
     }
+
+    for (let i = 0; i < APICallArray.length; i++) {
+        APICallArray[i].subscribe((response) => {
+          console.log(response);
+          ArtistOutputArray.push(response);
+          this.artistIdListFromSpotify.push(response.artists.items[0]);
+        });
+    }
+
+    console.log('ArtistOutputArray');
+    console.log(ArtistOutputArray);
+    console.log('this.artistIdListFromSpotify');
+    console.log(this.artistIdListFromSpotify);
   }
 }
