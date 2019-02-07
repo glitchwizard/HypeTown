@@ -81,14 +81,14 @@ margin-top: 13px;
   outline: 0;
 }
 
-#search_button:hover{
+/* #search_button:hover{
   font-family:vindica;
   font-size: 150px;
 
   text-shadow: 0px 0px 15px white;
   color: linear-gradient(white, #333 50%, #333);
   animation: up-bump 0.4s ease;
-}
+} */
 #search_button:click {
 
 }

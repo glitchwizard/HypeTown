@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LocationsListComponent } from './locations-list/locations-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { SafePipe } from './safe.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LocationsListComponent
+    LocationsListComponent,
+    // SafePipe
   ],
   imports: [
     BrowserModule,
