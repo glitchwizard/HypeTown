@@ -1,16 +1,16 @@
 
 .container_homeComponent {
-  position: relative;
+  /* position: relative;
   left: 0px;
   right: 0px;
   bottom: 0px;
   width: 80%;
   max-width: 1600px;
-  margin: auto; */
+  margin: auto;
   margin-top: 20px;
   margin-left: -19%;
   padding: 40px;
- float: left;
+ float: left; */
 }
 
  .banner {
@@ -38,13 +38,14 @@ height: 55px;
 margin-top: 13px;
 border-radius: 15px;
 border-style: none;
+outline: 0
 }
 
 .date {
-  left: 4.0em;
+  /* left: 4.0em;
   margin-top: 15px;
   position: relative;
-  width: 1600px;
+  width: 1600px; */
   z-index: 5;
 }
 
@@ -55,8 +56,11 @@ border-style: none;
   height: 55px;
   margin-top: 13px;
   border-radius: 15px;
-  border-style: none;
+  outline: 0;
+  /* z-index: 5; */
 }
+
+
 
 #findMusicRow {
 justify-content: center;

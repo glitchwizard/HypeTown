@@ -94,10 +94,10 @@
 }
 .content {
 
-  left: 21%;
+  /* left: 21%; */
   /* right: 05%; */
-  position: relative;
-  z-index: 1;
-  bottom: 600px;
+  /* position: relative; */
+  z-index: 5;
+  /* bottom: 600px; */
 
 }
