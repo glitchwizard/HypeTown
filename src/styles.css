@@ -31,6 +31,7 @@
   animation: HypeTown 30s ease infinite;
   box-shadow: inset 0px, 0px, 150px black;
   z-index: 0;
+  overflow:  scroll;
 }
 
 @-webkit-keyframes HypeTown {
@@ -51,7 +52,7 @@
 
 .containerMain:after {
   content: '';
-  position: absolute;
+  position: fixed;
   top:0;
   left: 0;
   bottom: 0;

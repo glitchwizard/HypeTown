@@ -37,7 +37,6 @@ export class HomeComponent {
   constructor(private  songkickService: SongkickService, public spotifyService: SpotifyService, public client: HttpClient,public sanitizer: DomSanitizer) {}
 
   findCityIdFromSongkick() {
-    console.log('findCityIdFromSongkick() running...');
     this.showLocation$ = this.songkickService.getLocationIdFromAPI(this.showLocationQuery);
 
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
@@ -49,13 +48,11 @@ export class HomeComponent {
 //This function should change to use map instead of subscribe, we use subscribe for troubleshooting to log the outputs
 
   findListOfShowsByCityIdAndDateRange() {
-    console.log('findListOfShowsByCityIdAndDateRange() running...');
     return this.findCityIdFromSongkick()
     .pipe(
       flatMap((idResponse) => {
       return this.songkickService.getShowListByCityIdAndDateRangeFromAPI(idResponse, this.showMinDate, this.showMaxDate)
         .map((showListResponse) => {
-          console.log(showListResponse)
             showListResponse.resultsPage.results.event.forEach((artist) => {
               let artistName = artist.performance[0].displayName;
               let artistVenue = artist.venue.displayName;
@@ -63,7 +60,6 @@ export class HomeComponent {
               const newEvent = new Event (artistName, artistVenue, uri);
               this.showList.push(newEvent);
             });
-            console.log(this.showList)
             return showListResponse.resultsPage.results.event
         });
       })
@@ -71,7 +67,6 @@ export class HomeComponent {
   }
 
 generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
-    console.log('generateArrayOfHeadlinerPerformances() running...');
     this.showLocationQuery = location;
     this.showMinDate = minDate;
     this.showMaxDate = maxDate;
@@ -83,8 +78,6 @@ generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: 
           }
         });
       }
-      console.log('songkick final return:');
-      console.log(this.artistList);
       return this.artistList;
     });
   }
@@ -109,7 +102,6 @@ generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: 
     const APICallArray = [];
     // const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
     const ArtistOutputArray = [];
-
     for (let i = 0; i < this.artistList.length; i++) {
       this.artistToQuery = this.artistList[i];
       APICallArray.push(this.generateArtistIdFromArtist(this.artistList[i]));
@@ -117,19 +109,16 @@ generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: 
 
     for (let i = 0; i < APICallArray.length; i++) {
         APICallArray[i].subscribe((response) => {
-          console.log(response);
           ArtistOutputArray.push(response);
         });
     }
+
     this.spotifyArtistListFromQuery = ArtistOutputArray;
     return ArtistOutputArray;
   }
 
   getSpotifyPlayerURL(input){
-    console.log('input');
-    console.log(input);
     let outputString = 'https://open.spotify.com/embed/artist/' + input;
-    console.log("outputstring " + outputString)
     return outputString;
   }
 }

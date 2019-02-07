@@ -6,7 +6,7 @@
   </div>
   <div class="container form">
     <div class="location">
-      <input id="location_input" #location value="Los Angeles">
+      <input id="location_input" #location value="Portland">
     </div>
 
     <div class="row">
@@ -19,25 +19,13 @@
     </div>
     <div id="findMusicRow" class="row">
 
-      <ul>
-        <div *ngFor="let artist of spotifyArtistListFromQuery">
-          <li *ngIf="artist.artists.items[0]">
-            <!-- {{ artist.artists.items[0].name }}
-            {{ artist.artists.items[0].id }} -->
-              <!-- <iframe src='https://open.spotify.com/embed/artist/{{artist.artists.items[0].id }}'  width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-              <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getSpotifyPlayerURL(artist.artists.items[0].id))'  width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-          </li>
-        </div>
-      </ul>
-      <button id="spotifyURL" (click)="getSpotifyPlayerURL()" (click)="toggle('results')">get spotify URL strings</button>
-      <p></p>
       <button id="search_button" (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)" (click)="toggle('results')">Find Music</button>
       <p></p>
 
 
     </div>
-    <button  (click)="getAllSpotifyArtistObjects()" class="btn btn-warning">Find songs on Spotify from artist list</button>
+
   </div>
 
 <div class="container results d-flex justify-content-center" [@slideUpandDown]="animationState">
@@ -45,31 +33,26 @@
     <div  class="col-lg-6">
       <div class="container api-data">
         <div class="row artist-row"  *ngFor="let artist of showList">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
           <p>{{artist.artistName}}</p>
           </div>
-          <div class="col=lg-3">
+          <div class="col-lg-8">
             <p>{{artist.venueName}}</p>
             <p><a href="{{artist.uri}}">Event Link</a></p>
           </div>
         </div>
       </div>
     </div>
-    <ul>
-      <div *ngFor="let artist of spotifyArtistListFromQuery">
-        <li *ngIf="artist.artists.items[0]">
-          {{ artist.artists.items[0].name }}
-          {{ artist.artists.items[0].id }}
 
-        </li>
+      <div class="col-lg-6 top-songs">
+        <div id="find_songs"  (click)="getAllSpotifyArtistObjects()" class="btn btn-large">Click To Hear Some Songs</div>
+        <div *ngFor="let artist of spotifyArtistListFromQuery">
+          <div *ngIf="artist.artists.items[0]">
+              <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getSpotifyPlayerURL(artist.artists.items[0].id))'  width="400" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
       </div>
-    </ul>
-    <!-- <div *ngFor="let artist of spotifyArtistListFromQuery">
-      {{ artist.artists.items[0].name }}
-      {{ artist.artists.items[0].id }}
-      <div class="col-lg-6 player">
-        <h3>artist.artists.items[0].id{{artist.artists.items[0].id}}</h3>
-      </div> -->
+
     </div>
   </div>
 </div>
