@@ -93,9 +93,10 @@
   text-shadow: 0px 2px 25px white;
 }
 .content {
-  left: 38%;
-  right: 05%;
-  position: absolute;
+
+  left: 21%;
+  /* right: 05%; */
+  position: relative;
   z-index: 1;
   bottom: 600px;
 

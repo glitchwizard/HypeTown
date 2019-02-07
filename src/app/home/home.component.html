@@ -21,19 +21,67 @@
     </div>
     <div id="findMusicRow" class="row">
 
-        <button id="search_button" (click)="getArtistsFromSpotify()">Find Music</button>
+      <button id="search_button" (click)="generateArrayOfHeadlinerPerformances(location.value, minDate.value, maxDate.value)">Find Music</button>
 
     </div>
+  </div>
 
+<div class="container results" *ngIf="show_results">
+  <div class="row">
+    <div  class="col-lg-6">
+      <div class="container apiData">
+        <div class="row"  *ngFor="let artist of showArtists$">
+          <div class="col-lg-3">
+          <p>{{artist}}</p>
+          </div>
+          <div class="col=lg-3">
+            <p>Venue: SWHOOSH</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-lg-6 player">
+          <iframe src="https://open.spotify.com/embed/playlist/3vbpgG3ACgvCrfuUZhGvbC" width="600" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+</div>
 
 
 
 
+<!--
+
+
+  <div class="results">
+    <div class="forLoop" *ngFor = "let artist of showArtists$">
+    <div class="row">
+
+        <div class="col-md-2 artist-list">
+          <div class="artist-section">
+            <p>{{artist}}</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="venue">
+            <p>Venue: SWHOOSH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <iframe src="https://open.spotify.com/embed/playlist/3vbpgG3ACgvCrfuUZhGvbC" width="600" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div> -->
+
+  <!-- <p></p>
+  CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
+  <p></p>
+  CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
+  <p></p> -->
 
 
 
-
+  <!-- <button  (click)="getAllSpotifyArtistIds()" class="btn btn-warning">Find songs on Spotify from artist list</button> -->
 
 
   <!-- <p></p>
