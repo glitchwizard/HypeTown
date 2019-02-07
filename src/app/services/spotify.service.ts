@@ -20,11 +20,21 @@ export class SpotifyService {
       .map(response => response.json());
   }
 
-  searchArtistID(str: string, token: string) {
+  searchArtistID(artistName: string, token: string) {
+      this.searchUrl = 'https://api.spotify.com/v1/search?query=' + artistName + '&type=artist';
+      let headers = new Headers();
+      headers.append('Authorization', 'Bearer ' + token);
+      return this._http.get(this.searchUrl, { headers: headers })
+        .map((token: Response) => {return token.json()})
+    }
+
+  findArtistTopTrack(id: string, token: string) {
       this.searchUrl = 'https://api.spotify.com/v1/search?query=' + str + '&type=artist';
       let headers = new Headers();
       headers.append('Authorization', 'Bearer ' + token);
       return this._http.get(this.searchUrl, { headers: headers })
         .map((token: Response) => {return token.json()})
     }
+
+
 }
