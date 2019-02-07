@@ -81,11 +81,13 @@
 
 
 
-  <!-- <button  (click)="getAllSpotifyArtistIds()" class="btn btn-warning">Find songs on Spotify from artist list</button> -->
+<button  (click)="getAllSpotifyArtistObjects()" class="btn btn-warning">Find songs on Spotify from artist list</button>
 
-
-  <!-- <p></p>
-  CityName: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.displayName }}
-  <p></p>
-  CityId: {{ (showLocation$ | async)?.resultsPage.results.location[0].metroArea.id }}
-  <p></p> -->
+<ul>
+  <div *ngFor="let artist of spotifyArtistListFromQuery">
+    <li *ngIf="artist.artists.items[0]">
+      {{ artist.artists.items[0].name }}
+      {{ artist.artists.items[0].id }}
+    </li>
+  </div>
+</ul>

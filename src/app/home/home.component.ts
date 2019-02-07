@@ -27,7 +27,7 @@ export class HomeComponent {
   public artistList: string[] = [];
   public showArtists$: Observable<any[]>;
   public artistToQuery: string;
-  public spotifyArtistListFromQuery: string[] = [];
+  public spotifyArtistListFromQuery = [];
   public artistIdListFromSpotify: string[] = [];
   animationState="out";
 
@@ -40,11 +40,11 @@ export class HomeComponent {
 
     return this.songkickService.getLocationIdFromAPI(this.showLocationQuery).map((response) => {
       this.showLocationId = response.resultsPage.results.location[0].metroArea.id;
-      return response.resultsPage.results.location[0].metroArea.id
-    })
+      return response.resultsPage.results.location[0].metroArea.id;
+    });
   }
 
-//This function should change to use map instead of subscribe, we use subecribe for troubleshooting to log the outputs
+//This function should change to use map instead of subscribe, we use subscribe for troubleshooting to log the outputs
 
   findListOfShowsByCityIdAndDateRange() {
     console.log('findListOfShowsByCityIdAndDateRange() running...');
@@ -56,7 +56,7 @@ export class HomeComponent {
           return showListResponse.resultsPage.results.event
         });
       })
-    )
+    );
   }
 
   generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: string){
@@ -71,9 +71,9 @@ export class HomeComponent {
           if(artist.billing == "headline") {
             this.artistList.push(artist.displayName);
           }
-        })
+        });
       }
-      console.log('songkick final return:')
+      console.log('songkick final return:');
       console.log(this.artistList);
       this.showArtists$ = this.artistList;
       console.log(this.showArtists$)
@@ -108,40 +108,25 @@ export class HomeComponent {
     )
   }
 
-  getAllSpotifyArtistIds(){
-    let dummyArtistList = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"];
-      this.artistToQuery = dummyArtist;
-      console.log('query on: ' + this.artistToQuery);
-      this.generateArtistIdFromAritstList().subscribe((response) => {
-        console.log('response');
-        console.log(response);
-        dummyArtistList.forEach((dummyArtist) => {
-        })
-      });
-    console.log(this.artistIdListFromSpotify);
+// TODO: This function needs to run asyncronously so that it can loop and get each artist ID per loop.
+  getAllSpotifyArtistObjects() { // populates this.artistIdListFromSpotify with first return of spotify artist query - which includes artist.name and artist.id -- for a spotify artist search by ID
+    const APICallArray = [];
+    const dummyArtistList = ['loren north', 'Randy Emata', 'Dyekho', 'The Lemon Twigs', 'The Toasters'];
+    const ArtistOutputArray = [];
 
+    for (let i = 0; i < dummyArtistList.length; i++) {
+      this.artistToQuery = dummyArtistList[i];
+      APICallArray.push(this.generateArtistIdFromArtist(dummyArtistList[i]));
+    }
+
+    for (let i = 0; i < APICallArray.length; i++) {
+        APICallArray[i].subscribe((response) => {
+          console.log(response);
+          ArtistOutputArray.push(response);
+        });
+    }
+    this.spotifyArtistListFromQuery = ArtistOutputArray;
+    console.log(ArtistOutputArray);
+    return ArtistOutputArray;
   }
 }
-
-  // generateArtistIdsFromAritstList(){
-  //   let artistList: string[] = ["loren north", "Randy Emata", "Dyekho", "The Lemon Twigs", "The Toasters"]
-  //   this.spotifyService.getToken().pipe(
-  //     flatMap((accessTokenResponse) => {
-  //       return this.spotifyService.searchArtistID("The Toasters", accessTokenResponse.access_token)
-  //       .map((response) => {
-  //         console.log('things are happening');
-  //         console.log(response.artists.items);
-  //         // response.artists.items.forEach((singleSpotifyArtistQueryResponse) => {
-  //         //   this.spotifyArtistQueryReturn.push(singleSpotifyArtistQueryResponse)
-  //         // });
-  //         // console.log(this.spotifyArtistQueryReturn);
-  //       });
-  //     })
-  //   )
-  // }
-
-//   getArtistsFromSpotify() {
-//   return this.spotifyAPI.getToken().map(res => {
-//       return this.spotifyAPI.searchArtistID("lil", res.access_token)
-//     });
-// }
