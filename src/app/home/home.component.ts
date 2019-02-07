@@ -125,18 +125,11 @@ generateArrayOfHeadlinerPerformances(location:string, minDate: string, maxDate: 
     return ArtistOutputArray;
   }
 
-  getSpotifyPlayerURL(){
-    console.log('this.spotifyArtistListFromQuery');
-    console.log(this.spotifyArtistListFromQuery);
-    for (let i = 0; i < this.spotifyArtistListFromQuery.length; i++) {
-      if (this.spotifyArtistListFromQuery[i].artists.items[0].id) {
-        log
-        console.log('this.spotifyArtistListFromQuery[i]');
-        console.log(this.spotifyArtistListFromQuery[i]);
-        let outputString = 'https://open.spotify.com/embed/artist/' + this.spotifyArtistListFromQuery[i].artists.items[0].id;
-        console.log("outputstring " + outputString)
-        return outputString;
-      }
-    }
+  getSpotifyPlayerURL(input){
+    console.log('input');
+    console.log(input);
+    let outputString = 'https://open.spotify.com/embed/artist/' + input;
+    console.log("outputstring " + outputString)
+    return outputString;
   }
 }

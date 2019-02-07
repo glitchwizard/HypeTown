@@ -27,7 +27,7 @@
             <!-- {{ artist.artists.items[0].name }}
             {{ artist.artists.items[0].id }} -->
               <!-- <iframe src='https://open.spotify.com/embed/artist/{{artist.artists.items[0].id }}'  width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-              <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getSpotifyPlayerURL())'  width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getSpotifyPlayerURL(artist.artists.items[0].id))'  width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
           </li>
         </div>
