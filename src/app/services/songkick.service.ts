@@ -3,7 +3,6 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { songkickKey } from '../api-keys';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
